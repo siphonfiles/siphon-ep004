@@ -1,0 +1,132 @@
+{
+ "clips": [
+  {
+   "name": "thomas_e4_i1_720p",
+   "first": "i1",
+   "last": "i1",
+   "lead": 0.3,
+   "camera": "M",
+   "tail": 0.35
+  },
+  {
+   "name": "thomas_e4_i2_720p",
+   "first": "i2",
+   "last": "i2",
+   "lead": 0.3,
+   "camera": "C",
+   "tail": 0.35
+  },
+  {
+   "name": "thomas_e4_i3_720p",
+   "first": "i3",
+   "last": "i3",
+   "lead": 0.3,
+   "camera": "M",
+   "tail": 0.35
+  },
+  {
+   "name": "thomas_e4_a9_720p",
+   "first": "a9",
+   "last": "a9",
+   "lead": 0.3,
+   "camera": "M",
+   "tail": 0.35
+  },
+  {
+   "name": "thomas_e4_a10_720p",
+   "first": "a10",
+   "last": "a10",
+   "lead": 0.3,
+   "camera": "C",
+   "tail": 0.35
+  },
+  {
+   "name": "thomas_e4_b7_720p",
+   "first": "b7",
+   "last": "b7",
+   "lead": 0.3,
+   "camera": "M",
+   "tail": 0.35
+  },
+  {
+   "name": "thomas_e4_b15_720p",
+   "first": "b15",
+   "last": "b15",
+   "lead": 0.3,
+   "camera": "M",
+   "tail": 0.35
+  },
+  {
+   "name": "thomas_e4_c7_720p",
+   "first": "c7",
+   "last": "c7",
+   "lead": 0.3,
+   "camera": "M",
+   "tail": 0.35
+  },
+  {
+   "name": "thomas_e4_c10_720p",
+   "first": "c10",
+   "last": "c10",
+   "lead": 0.3,
+   "camera": "C",
+   "tail": 0.35
+  },
+  {
+   "name": "thomas_e4_d9_720p",
+   "first": "d9",
+   "last": "d9",
+   "lead": 0.3,
+   "camera": "M",
+   "tail": 0.35
+  },
+  {
+   "name": "thomas_e4_d15_720p",
+   "first": "d15",
+   "last": "d15",
+   "lead": 0.3,
+   "camera": "M",
+   "tail": 0.35
+  },
+  {
+   "name": "thomas_e4_e8_720p",
+   "first": "e8",
+   "last": "e8",
+   "lead": 0.3,
+   "camera": "M",
+   "tail": 0.35
+  },
+  {
+   "name": "thomas_e4_f6_720p",
+   "first": "f6",
+   "last": "f6",
+   "lead": 0.3,
+   "camera": "M",
+   "tail": 0.35
+  },
+  {
+   "name": "thomas_e4_g5_720p",
+   "first": "g5",
+   "last": "g5",
+   "lead": 0.3,
+   "camera": "M",
+   "tail": 0.35
+  },
+  {
+   "name": "thomas_e4_k5_720p",
+   "first": "k5",
+   "last": "k5",
+   "lead": 0.3,
+   "camera": "M",
+   "tail": 0.35
+  },
+  {
+   "name": "thomas_e4_k6_720p",
+   "first": "k6",
+   "last": "k6",
+   "lead": 0.3,
+   "camera": "C",
+   "tail": 0.35
+  }
+ ]
+}

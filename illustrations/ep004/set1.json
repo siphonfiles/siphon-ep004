@@ -1,0 +1,170 @@
+{
+ "style": " Cinematic 3D render for a premium investigative documentary, stylized realism with clean matte materials, low-key lighting with deep violet-ink and charcoal shadows, a single cool ultraviolet key light as the only strong accent, soft volumetric haze, shallow depth of field, 35mm lens, clearly separated foreground, midground and background layers, calm restrained mood, fine film grain. No text, no logos, no brand marks.",
+ "images": [
+  {
+   "id": "t1_sealed_box",
+   "seed": 4100,
+   "prompt": "A small plain dark cardboard box tightly shrink-wrapped in clear plastic film, alone on a dark wooden table, the film catching a thin line of ultraviolet light, everything else in shadow."
+  },
+  {
+   "id": "t3_open_tray",
+   "seed": 4101,
+   "prompt": "Overhead view of an opened plain dark box with a small black hardware wallet device resting in a moulded tray, a folded paper card with blank lines beside it, ultraviolet glow only on the edge of the device."
+  },
+  {
+   "id": "t7_screen_glow",
+   "seed": 4102,
+   "prompt": "Extreme close-up of a tiny monochrome device screen glowing in the dark, showing a short list of blurred illegible words, a faint ultraviolet halo around the screen."
+  },
+  {
+   "id": "a1_bitcoin_arrival",
+   "seed": 4103,
+   "prompt": "A dark empty room at night lit only by a laptop on a desk, seen from behind a man's shoulder in silhouette, the laptop screen showing a simple glowing transaction confirmation chart with one rising bar, ultraviolet light on his shoulder outline."
+  },
+  {
+   "id": "a3_device_hand",
+   "seed": 4104,
+   "prompt": "A man's hand seen from behind holding a small black hardware wallet device up against a dark window at night, city lights blurred far away, ultraviolet rim light on the device."
+  },
+  {
+   "id": "a4_paper_words",
+   "seed": 4105,
+   "prompt": "A sheet of paper with twenty-four numbered blank lines on a dark desk, a pencil lying across it, a small black device beside it, ultraviolet light grazing only the paper edge."
+  },
+  {
+   "id": "a5_reseller_shop",
+   "seed": 4106,
+   "prompt": "A small electronics shop counter at night seen from the street through glass, rows of plain sealed boxes on shelves, nobody inside, one ultraviolet display light on the shelf."
+  },
+  {
+   "id": "a7_empty_wallets",
+   "seed": 4107,
+   "prompt": "A long row of small identical open empty metal cash boxes on a dark table receding into the distance, red warning light falling across them from the side."
+  },
+  {
+   "id": "b1_two_chips",
+   "seed": 4108,
+   "prompt": "A macro view of a small green circuit board with two distinct chips side by side, one chip glowing softly ultraviolet, the other dark and ordinary, tiny traces between them."
+  },
+  {
+   "id": "b6_setup_screen",
+   "seed": 4109,
+   "prompt": "A person seen from behind at a desk lamp-lit in dim light, writing words on paper while a tiny device screen glows in front of them, their face out of frame, ultraviolet glow on the screen only."
+  },
+  {
+   "id": "b9_teardown",
+   "seed": 4110,
+   "prompt": "An opened small black device lying in two halves on a dark mat under a magnifying lamp, a thin extra flexible circuit board tucked inside where padding should be, a tiny antenna coil, ultraviolet light on the extra board."
+  },
+  {
+   "id": "b10_two_batteries",
+   "seed": 4111,
+   "prompt": "Two small flat rectangular batteries side by side on a dark mat, one clearly smaller than the other, precision tweezers beside them, ultraviolet edge light."
+  },
+  {
+   "id": "b12_signal_rings",
+   "seed": 4112,
+   "prompt": "A tiny circuit board sitting inside a dark device enclosure emitting faint concentric ultraviolet rings of light outward into dark air, like a radio signal leaving the box."
+  },
+  {
+   "id": "b14_cell_tower",
+   "seed": 4113,
+   "prompt": "A lonely cellular tower on a hill at night under a dark violet sky, a single small blinking light at its top, empty landscape, faint mist moving low."
+  },
+  {
+   "id": "c2_forum_warning",
+   "seed": 4114,
+   "prompt": "A laptop on a kitchen table at night showing a blurred forum thread with a photo of a small device, the room dark, a mug beside it, seen from behind a chair, ultraviolet screen light."
+  },
+  {
+   "id": "c3_stage_teardown",
+   "seed": 4115,
+   "prompt": "An empty conference stage with a single table under a spotlight, a small opened device and a precision screwdriver on the table, rows of dark empty seats in the foreground."
+  },
+  {
+   "id": "c8_shop_shutter",
+   "seed": 4116,
+   "prompt": "A small storefront at night with its metal shutter half pulled down, a faded empty sign above with no letters, wet street reflecting one ultraviolet light."
+  },
+  {
+   "id": "d1_receipts_chain",
+   "seed": 4117,
+   "prompt": "Glowing translucent paper receipts linked in a long chain floating through dark space, each one blank, the chain receding into the distance, ultraviolet light along the links."
+  },
+  {
+   "id": "d4_test_loops",
+   "seed": 4118,
+   "prompt": "Small glowing ultraviolet coins travelling around a closed circular track of thin light in the dark, like a test loop, tiny motion trails."
+  },
+  {
+   "id": "d5_control_key",
+   "seed": 4119,
+   "prompt": "A single old-fashioned brass master key hanging alone on a hook against a dark wall, lit by a narrow ultraviolet beam, other empty hooks in shadow."
+  },
+  {
+   "id": "d6_wallets_filling",
+   "seed": 4120,
+   "prompt": "A row of small transparent glass jars slowly filling with glowing ultraviolet grains of light on a dark shelf, each jar at a different level."
+  },
+  {
+   "id": "d8_locks_changed",
+   "seed": 4121,
+   "prompt": "Close-up of a row of identical door locks on dark doors in a long corridor, each with a new shiny key already inserted, faint red light at the end of the corridor."
+  },
+  {
+   "id": "d10_clock_507",
+   "seed": 4122,
+   "prompt": "A plain wall clock with no numbers in a dark room showing the hands at seven minutes past five, a cold ultraviolet light from a window, long shadows."
+  },
+  {
+   "id": "d11_drain",
+   "seed": 4123,
+   "prompt": "Glowing ultraviolet streams of light pouring out of many small boxes at once and converging into one dark funnel, red light at the funnel's mouth."
+  },
+  {
+   "id": "e1_frozen_coins",
+   "seed": 4124,
+   "prompt": "A pile of coins encased in a block of clear ice on a dark table, frost on the surface, cool ultraviolet light inside the ice."
+  },
+  {
+   "id": "e4_mixer_maze",
+   "seed": 4125,
+   "prompt": "An overhead view of a dark labyrinth of narrow glowing channels where small points of light split and scatter in many directions until they disappear."
+  },
+  {
+   "id": "e4b_shrinkwrap_open",
+   "seed": 4126,
+   "prompt": "Close-up of hands seen from above cutting open the clear shrink-wrap of a small plain dark box with a small blade on a workbench, ultraviolet bench lamp."
+  },
+  {
+   "id": "e7_city_shops",
+   "seed": 4127,
+   "prompt": "A rainy night street in a dense Asian city seen from above, small shop signs glowing without readable text, one shop window lit ultraviolet, umbrellas from behind."
+  },
+  {
+   "id": "f3_airport_box",
+   "seed": 4128,
+   "prompt": "A small plain sealed box on a hotel room desk at night with a large window behind showing a desert city skyline lit up, ultraviolet glow on the box."
+  },
+  {
+   "id": "f3b_winter_city",
+   "seed": 4129,
+   "prompt": "A small plain sealed box on a windowsill with a snowy European city street at night outside, tram lines and old buildings blurred, light snow falling."
+  },
+  {
+   "id": "f8_xray",
+   "seed": 4130,
+   "prompt": "An X-ray view of a small hardware wallet device on a light table, the internal parts visible as glowing ultraviolet silhouettes, one extra small board highlighted."
+  },
+  {
+   "id": "g1_empty_desk",
+   "seed": 4131,
+   "prompt": "An empty investigator's desk at night with a closed folder, a lamp switched off and a chair pushed back, a large dark window, ultraviolet streetlight outside."
+  },
+  {
+   "id": "k1_box_window",
+   "seed": 4132,
+   "prompt": "A small sealed shrink-wrapped dark box on a windowsill at dawn, the first cool light just touching the plastic film, the city soft and blurred outside."
+  }
+ ]
+}

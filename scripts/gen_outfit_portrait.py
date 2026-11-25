@@ -1,4 +1,4 @@
-"""Thomas in a new outfit for ep. 003: the ep. 001 portrait recipe (Z-Image-Turbo, seed 596067, 896x1152,
+"""Thomas in a new outfit (ep. 004): the ep. 001 portrait recipe (Z-Image-Turbo, seed 596067, 896x1152,
 8 steps, time shift 3), same prompt word for word except the clothing sentence. One image per outfit.
 Usage: python scripts/gen_outfit_portrait.py <out_dir>"""
 import json, os, shutil, sys, time
@@ -15,10 +15,10 @@ BASE = ("Photorealistic studio portrait photograph of a man in his late thirties
 ORIGINAL = "He wears a plain dark charcoal crew-neck sweater, no pattern, no logo."
 # Proprietarul (01:01): no accessories, no labels on the clothes. Described positively (Z-Image: negations
 # activate the negated concept): bare plain fabric, nothing worn but the garment.
-OUTFITS = {  # ep. 003 (Coldcard): warm camel against the cold steel look; collared shirts kept the face in ep. 002
-    "camel_overshirt": "He wears only a plain camel-brown wool overshirt with a soft pointed collar and matching fabric-covered buttons, buttoned up, completely unadorned smooth fabric.",
-    "olive_shirt": "He wears only a plain dark olive green cotton shirt with a soft open collar and matching fabric-covered buttons, completely unadorned smooth fabric.",
-    "rust_corduroy": "He wears only a plain rust-brown fine-wale corduroy shirt with a soft pointed collar and matching fabric-covered buttons, buttoned up, completely unadorned fabric.",
+OUTFITS = {  # ep. 004 (Ledger implant): dark burgundy crew-neck (CLAUDE.md section 0), three shades/knits
+    "burgundy_crewneck": "He wears only a plain dark burgundy crew-neck sweater in fine knit wool, completely unadorned smooth fabric.",
+    "wine_merino": "He wears only a plain deep wine-red merino crew-neck sweater, fine smooth knit, completely unadorned fabric.",
+    "oxblood_cotton": "He wears only a plain oxblood-red cotton crew-neck sweater with a soft ribbed collar, completely unadorned fabric.",
 }
 assert ORIGINAL in BASE.replace("{OUTFIT}", ORIGINAL)
 z = Client("Tongyi-MAI/Z-Image-Turbo", token=os.environ["HF_TOKEN"])
