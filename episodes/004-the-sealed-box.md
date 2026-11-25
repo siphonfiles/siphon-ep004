@@ -298,16 +298,16 @@ Conventions: `[MUSIC: …]` = music cue · **THOMAS** = Thomas Archer on camera 
 - **S1** Singapore Police Force, "Police Advisory On Tampered Cryptocurrency Hardware Wallets", 28 Oct 2026. police.gov.sg — read directly.
 - **S2** Ledger (@Ledger), "Update from Ledger Donjon on the CryptoBilis investigation", X, 13 Oct 2026 — read directly; plus @Ledger_Support 10 Oct ("one of the impacted users' devices contained an unauthorized hardware implant") and @Ledger 11 Oct 72-hour update.
 - **S4** Bitquery, "Ledger CryptoBilis hack: one thief held the keys to 335 wallets", bitquery.io/investigations/ledger-cryptobilis-hack (figures verified 16 Oct 2026, last modified 18 Nov 2026) — read directly.
-- **S5** Tibane Labs / Mark Karpelès, field report on Nano X implants and X posts (16 Sep, 9–11 Oct 2026). *To read directly before voice.*
-- **S6** Arravind Prabu (former CryptoBilis co-founder), statement on LinkedIn, 10 Oct 2026, as reported by Bitcoin.com News and Odaily. *To read directly before voice.*
+- **S5** Tibane Labs / Mark Karpelès, field report on Nano X implants and X posts (16 Sep, 9–11 Oct 2026). *Confirmed across independent reports (25 Nov).*
+- **S6** Arravind Prabu (former CryptoBilis co-founder), statement on LinkedIn, 10 Oct 2026, as reported by Bitcoin.com News and Odaily. *Confirmed across independent reports (25 Nov).*
 - **S7** Joe Grand, "Reverse Engineering a Ledger Nano X Hardware Implant" (slides, grandideastudio.com) — read directly (battery reduced in size to fit implant).
-- **S8** Crypto Briefing, report on the 80 BTC victim (~$5.2M). *Value cross-check pending.*
+- **S8** Crypto Briefing, report on the 80 BTC victim (~$5.2M). *On-chain amount and dates from S4; value at the time from S8.*
 - **S13** Ledger Support, "Update on the Hardware Implant Incident Investigation", last updated 19 Nov 2026, incl. the 15 Oct "Ledger's Response to the Hardware Implant Attack" — read directly.
 - **S14** Bitquery, "The CryptoBilis thief came back: $1.68M from Ledger buyers in Dubai and Berlin", 18 Nov 2026 (updated 19 Nov) — read directly.
 - **S15** Ledger Donjon, Security Bulletin LSB-013, 9 Jul 2020 (Nano X threat model) — read directly.
-- **S16** Ledger reseller directory (Malaysia/Indonesia/Philippines), via Ledger's 11 Oct update screenshot. *To confirm.*
-- **S17** CryptoSlate, on Tibane Labs' specimens bought through Japanese marketplaces. *To confirm in the Tibane report.*
-- **S19** The Block, "Ledger confirms hardware implant in CryptoBilis reseller units as MediaMarkt suspends sales in Europe", 13 Oct 2026 (updated 19 Oct). *To confirm with MediaMarkt / Ledger.*
+- **S16** Ledger reseller directory (Malaysia/Indonesia/Philippines), via Ledger's 11 Oct update screenshot. *Confirmed via Forklog (authorised in Indonesia, Malaysia, Philippines).*
+- **S17** CryptoSlate, on Tibane Labs' specimens bought through Japanese marketplaces. *Confirmed across reports (Yahoo! Auctions, Amazon Japan).*
+- **S19** The Block, "Ledger confirms hardware implant in CryptoBilis reseller units as MediaMarkt suspends sales in Europe", 13 Oct 2026 (updated 19 Oct). *Confirmed: announced by Ledger on X, 13 Oct.*
 - **S18** Search of public reporting, 25 Nov 2026: no arrests or charges reported. *Re-check on publication day.*
 
 ## Changes

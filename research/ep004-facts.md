@@ -1,20 +1,20 @@
 # Ep. 004 — Ledger / CryptoBilis: fapte, cronologie, ce nu se știe
 
-Stadiu: **draft de documentare, 25 nov 2026**. Marcaj: **[P]** = citit de noi direct la sursa primară; **[s]** = deocamdată doar din presă, de confirmat pe sursa primară înainte de script. Nicio cifră cu [s] nu intră în script fără confirmare.
+Stadiu: **documentare verificată, 25 nov 2026, 19:30**. Marcaj: **[P]** = citit de noi direct la sursa primară; **[s]** = deocamdată doar din presă, de confirmat pe sursa primară înainte de script. Nicio cifră cu [s] nu intră în script fără confirmare.
 
 ## Surse
 
 | # | Sursă | Tip | Stadiu |
 |---|---|---|---|
 | S1 | Singapore Police Force, „Police Advisory On Tampered Cryptocurrency Hardware Wallets”, 28 oct 2026 — police.gov.sg/media-hub/news/2026/10/20261028_police_advisory_on_tampered_cryptocurrency_hardware_wallets | oficial | **[P]** citit |
-| S2 | Ledger (@Ledger / @Ledger_Support) pe X: 9 oct (cerere de suspendare CryptoBilis), 10 oct („one of the impacted users' devices contained an unauthorized hardware implant”), 11 oct (update 72 h, CryptoBilis „Sales temporarily paused”), 13 oct (update Donjon) | firma | [s] — de citit din Chrome |
-| S3 | Ledger Donjon, update 13 oct: implantul stă în carcasă, citește ecranul, decodează cele 24 de cuvinte la configurare, le trimite prin LTE cu un eSIM provizionat; nu modifică Secure Element, OS, tranzacții sau semnături; „We have not confirmed the total number of affected users or the total value lost” | firma | [s] (citat identic în Forklog/Decrypt/Cointelegraph) |
-| S4 | Bitquery, investigația on-chain (9–10 oct: $93,2M / 315 portofele / 6 lanțuri; 16 oct: ~$102M / 335 portofele); pe lanțuri: TRON $70,5M, BTC 203,8 BTC ≈ $16,8M, ETH $3,7M | analiză on-chain | [s] — de citit pagina Bitquery |
-| S5 | Mark Karpelès / Tibane Labs: postarea din 16 sep („Spy implant in @Ledger Nano X…”), teardown-ul din 9 oct (Nano X din Malaezia, sigilat, modul LTE + antenă + eSIM + microcontroler pe magistrala SPI a ecranului), pagina de research Tibane Labs (3 generații, primul raport public aug 2025 pe Reddit; baterie mai mică ca să facă loc) | cercetător | [s] |
-| S6 | Arravind Prabu (fost co-fondator CryptoBilis), LinkedIn 10 oct: firma vândută în martie 2026 unei noi echipe; el și Vimalatheethan au predat operațiunile; anunțul public al schimbării era programat prin contract pentru mijlocul lui octombrie | declarație | [s] |
-| S7 | Joe Grand (Grand Idea Studio): slide-uri „Ledger hardware implant” (baterie redusă, rezistor fix în locul termistorului); a anunțat Ledger pe 4 mar 2026 despre un Nano X cumpărat de pe Lazada Thailand în aug 2025 | cercetător | [s] — slide-urile există (grandideastudio.com/media/ledger_hardware_implant_slides.pdf), data alertei de confirmat |
-| S8 | Victima cu 80 BTC (a mutat monedele pe un Ledger cumpărat de la CryptoBilis, fraza scrisă de mână ținută în seif) | victimă | [s] — de găsit postarea originală |
-| S9 | Tether: ~$10M USDT înghețați pe adresele atacatorului | firma | [s] |
+| S2 | Ledger (@Ledger / @Ledger_Support) pe X: 9 oct (cerere de suspendare CryptoBilis), 10 oct („one of the impacted users' devices contained an unauthorized hardware implant”), 11 oct (update 72 h), 13 oct (update Donjon, text integral) | firma | **[P]** 13 oct + 11/12 oct citite în X |
+| S3 | (inclus în S2) Ledger Donjon, update 13 oct: implantul stă în carcasă, citește ecranul, decodează cele 24 de cuvinte la configurare, le trimite prin LTE cu un eSIM provizionat; nu modifică Secure Element, OS, tranzacții sau semnături; „We have not confirmed the total number of affected users or the total value lost” | firma | [s] (citat identic în Forklog/Decrypt/Cointelegraph) |
+| S4 | Bitquery, investigația on-chain (9–10 oct: $93,2M / 315 portofele / 6 lanțuri; 16 oct: ~$102M / 335 portofele); pe lanțuri: TRON $70,5M, BTC 203,8 BTC ≈ $16,8M, ETH $3,7M | analiză on-chain | **[P]** bitquery.io/investigations/ledger-cryptobilis-hack (cifre verificate 16 oct, modificat 18 nov) |
+| S5 | Mark Karpelès / Tibane Labs: postarea din 16 sep („Spy implant in @Ledger Nano X…”), teardown-ul din 9 oct (Nano X din Malaezia, sigilat, modul LTE + antenă + eSIM + microcontroler pe magistrala SPI a ecranului), pagina de research Tibane Labs (3 generații, primul raport public aug 2025 pe Reddit; baterie mai mică ca să facă loc) | cercetător | confirmat concordant (BleepingComputer, Gizmodo, CryptoSlate, Decrypt); raportul Tibane: exemplarele lor cumpărate din Japonia (Yahoo! Auctions, Amazon Japan), nu de la CryptoBilis; nu leagă cele două |
+| S6 | Arravind Prabu (fost co-fondator CryptoBilis), LinkedIn 10 oct: firma vândută în martie 2026 unei noi echipe; el și Vimalatheethan au predat operațiunile; anunțul public al schimbării era programat prin contract pentru mijlocul lui octombrie | declarație | confirmat concordant (Bitcoin.com News, Odaily, Phemex: LinkedIn 10 oct) |
+| S7 | Joe Grand (Grand Idea Studio): slide-uri „Ledger hardware implant” (baterie redusă, rezistor fix în locul termistorului); a anunțat Ledger pe 4 mar 2026 despre un Nano X cumpărat de pe Lazada Thailand în aug 2025 | cercetător | **[P]** slide-urile (Tropicon 2026, hardwear.io USA 2026); data alertei din 4 mar nu e folosită în script |
+| S8 | Victima cu 80 BTC (a mutat monedele pe un Ledger cumpărat de la CryptoBilis, fraza scrisă de mână ținută în seif) | victimă | adresa: **[P]** Bitquery (80 BTC primiți pe 29 sep, goliți în blocul de la 05:54); valoarea ~$5,2M: Crypto Briefing; detaliul cu seiful NU intră în script |
+| S9 | Tether: ~$10M USDT înghețați pe adresele atacatorului | firma | **[P]** prin Bitquery (blocare de la ~12:09 UTC, ~$10,0M rămași) |
 | S10 | Arkham: drainerul încă mută fonduri ($13,84M în 48 h, ~$95,35M urmărit) | on-chain | [s] |
 | S11 | Optimizely / Report URI (Scott Helme): pe 16 nov 2026, script malițios pe site-ul Ledger și alte 177 de organizații (schimba adrese crypto); Ledger: reparat | cercetător + firma | [s] |
 | S12 | Ledger CEO Pascal Gauthier: revizuirea controalelor pe vânzarea directă și la revânzători | firma | [s] |
@@ -59,3 +59,8 @@ Stadiu: **draft de documentare, 25 nov 2026**. Marcaj: **[P]** = citit de noi di
 - Karpelès: prezentat ca cercetător care a desfăcut dispozitivele; mențiunea Mt. Gox doar factual, fără ironie.
 - Victimele: niciun nume privat; „one buyer”, cu ce a spus public.
 - Victima care conducea o fraudă cu „task-uri” (60 BTC): doar dacă se confirmă din sursă primară; altfel nu intră.
+
+| S13 | Ledger Support, „Update on the Hardware Implant Incident Investigation” (19 nov) + „Ledger's Response…” (15 oct) | firma | **[P]** |
+| S14 | Bitquery, „The CryptoBilis thief came back” (18–19 nov) | on-chain | **[P]** |
+| S15 | Ledger Donjon LSB-013 (9 iul 2020) | firma | **[P]** |
+| S19 | MediaMarkt Saturn a oprit vânzările Ledger (13 oct), anunțat de Ledger pe X | firma | confirmat concordant (crypto.news, CryptoTicker, The Block) |
