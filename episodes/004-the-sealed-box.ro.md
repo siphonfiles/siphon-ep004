@@ -1,4 +1,4 @@
-# Siphon Files — Episodul 004: Cutia sigilată (traducere în română, v1)
+# Siphon Files — Episodul 004: Cutia sigilată (traducere în română, v1.1)
 
 Doar pentru verificare. Textul care intră în video e cel în engleză, din `004-the-sealed-box.md`. **THOMAS** = Thomas în cadru (un clip de 5 s pe replică).
 
@@ -6,7 +6,7 @@ Doar pentru verificare. Textul care intră în video e cel în engleză, din `00
 - **t1** Cutia asta n-a fost deschisă niciodată.
 - **t2** Folia e strânsă. Sigiliul e intact.
 - **t3** Înăuntru e un portofel hardware autentic. Cipul adevărat. Software-ul adevărat.
-- **t4** Pe 9 octombrie, dispozitive ca acesta au ajutat la golirea a 335 de portofele.
+- **t4** Pe 9 octombrie au fost golite 335 de portofele. Ledger a legat pierderile confirmate de dispozitive ca acesta.
 - **t5** Aproximativ 102 milioane de dolari, după o numărătoare pe blockchain.
 - **t6** Nimeni n-a spart cipul. Nimeni n-a spart codul.
 - **t7** Cineva doar a citit ecranul.
@@ -79,7 +79,7 @@ Doar pentru verificare. Textul care intră în video e cel în engleză, din `00
 - **d13b** Un alt portofel, alimentat prima dată pe 15 septembrie, a pierdut șapte milioane de dolari în Tether, într-o singură tranzacție.
 - **d13c** Un portofel Tron primise 33 de milioane de dolari de la începutul lui octombrie. Arăta ca o afacere.
 - **d14** După numărătoarea Bitquery, totalul a ajuns la 102 milioane de dolari, din 335 de portofele, pe șase rețele.
-- **THOMAS d15** Fiecăruia dintre proprietari i s-a spus că stocarea la rece e sigură.
+- **THOMAS d15** Cei mai mulți bani dispăruseră înainte să tragă cineva alarma.
 
 ## ACTUL 5 — URMĂRIREA
 - **e1** Dar stablecoin-urile pot fi înghețate. Și până la prânz, Tether îngheța.
@@ -92,7 +92,7 @@ Doar pentru verificare. Textul care intră în video e cel în engleză, din `00
 - **e6** Două zile mai târziu, a dat vina pe un grup infracțional sofisticat și a înăsprit regulile pentru revânzători. Fără dispozitive expuse. Predate la cumpărare. Fără revânzarea celor returnate.
 - **e7** Apoi poliția din Singapore a raportat cel puțin două cazuri din 10 septembrie. Aproximativ 3,5 milioane de dolari singaporezi. Dispozitive cumpărate din magazine locale.
 - **e7b** În Europa, lanțul de electronice MediaMarkt a oprit vânzările Ledger.
-- **THOMAS e8** Deci n-a fost un singur revânzător. Și nu doar online.
+- **THOMAS e8** Deci n-a fost doar un revânzător, într-o singură țară.
 
 ## ACTUL 6 — ÎNTOARCEREA
 - **f1** Apoi, pe 14 noiembrie, la 19:43 UTC, patru portofele Tron s-au golit.

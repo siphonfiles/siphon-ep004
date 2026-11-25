@@ -1,7 +1,7 @@
 # Siphon Files — Episode 004: The Sealed Box
 
 **Case:** Ledger hardware wallets fitted with a hidden LTE implant, sold through resellers (CryptoBilis, Southeast Asia; later Berlin and Dubai). Drain of 9 Oct 2026 (~$102.0M from 335 wallets by Bitquery's count) and the return of the same thief on 14–16 Nov 2026.
-**Draft:** v1 · 25 Nov 2026 · target length 10:00–11:00 (hard limit 11:00)
+**Draft:** v1.1 · 25 Nov 2026 · target length 10:00–11:00 (hard limit 11:00)
 **Publish:** Monday 14 Dec 2026, 18:00 (Romania)
 
 Conventions: `[MUSIC: …]` = music cue · **THOMAS** = Thomas Archer on camera (one 5 s clip per line, ≤ 12 words) · plain lines = narration (Thomas voice-over over graphics/illustrations) · `[Sn]` = source · `[CARD: …]` = on-screen card. Numbers are already written for the voice.
@@ -18,7 +18,7 @@ Conventions: `[MUSIC: …]` = music cue · **THOMAS** = Thomas Archer on camera 
 
 **t3** Inside is a genuine hardware wallet. The real chip. The real software. [S2][S13]
 
-**t4** On the ninth of October, devices like this one helped empty three hundred and thirty-five wallets. [S4]
+**t4** On the ninth of October, three hundred and thirty-five wallets were emptied. Ledger tied the confirmed losses to devices like this one. [S4][S2]
 
 **t5** About one hundred and two million dollars, by one on-chain count. [S4]
 
@@ -166,7 +166,7 @@ Conventions: `[MUSIC: …]` = music cue · **THOMAS** = Thomas Archer on camera 
 
 **d14** By Bitquery's count, the full tally reached one hundred and two million dollars, from three hundred and thirty-five wallets, on six networks. [S4]
 
-**THOMAS d15** Every one of those owners was told cold storage is safe.
+**THOMAS d15** Most of it was gone before anyone raised the alarm.
 
 [MUSIC: out, slow fade ~4 s, ends before d15]
 
@@ -196,7 +196,7 @@ Conventions: `[MUSIC: …]` = music cue · **THOMAS** = Thomas Archer on camera 
 
 **e7b** In Europe, the electronics chain MediaMarkt paused its Ledger sales. [S19]
 
-**THOMAS e8** So it wasn't only one reseller. And it wasn't only online.
+**THOMAS e8** So it wasn't just one reseller, in one country.
 
 ## ACT 6 — THE RETURN  (~8:30–9:35)
 
@@ -268,8 +268,8 @@ Conventions: `[MUSIC: …]` = music cue · **THOMAS** = Thomas Archer on camera 
 | c7 | That was about to change. | 5 |
 | c10 | Who owned the shop by October? Nobody has said publicly. | 10 |
 | d9 | The thief didn't steal yet. The thief changed the locks. | 10 |
-| d15 | Every one of those owners was told cold storage is safe. | 11 |
-| e8 | So it wasn't only one reseller. And it wasn't only online. | 11 |
+| d15 | Most of it was gone before anyone raised the alarm. | 10 |
+| e8 | So it wasn't just one reseller, in one country. | 9 |
 | f6 | According to Bitquery, it was the same control address. | 9 |
 | g5 | Here's what we do know. The chip was never broken. | 10 |
 | k5 | Before you trust a seal, ask who sealed it. | 9 |
@@ -313,3 +313,4 @@ Conventions: `[MUSIC: …]` = music cue · **THOMAS** = Thomas Archer on camera 
 ## Changes
 
 - **v1 (25 Nov 2026):** first draft.
+- **v1.1 (25 Nov 2026):** self-review. t4 no longer says the devices emptied all 335 wallets (Bitquery: how keys leaked from the other wallets is unknown; Ledger only ties *confirmed* losses to CryptoBilis devices). d15 rewritten (not every drained owner is known to be a Ledger owner); now matches the timeline (drains 05:07–05:56 UTC, first freezes ~12:09 UTC). e8 simplified. LanguageTool en-GB: 4 notes, all intentional ("authorised" en-GB, "No… No… No…" rhythm, "twenty twenty" for the voice, "U S D D" spelled for the voice).
