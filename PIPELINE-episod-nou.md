@@ -28,13 +28,12 @@ Ritmul: **un episod pe săptămână, lunea la 18:00**. Un episod durează de ob
 
 ### Ce face proprietarul și ce faci tu
 
-Tu faci tot, cu excepția a cinci lucruri.
+Tu faci tot, cu excepția a patru lucruri.
 
 | Ce face proprietarul | De ce |
 |---|---|
 | **Stă la Mac în timpul research-ului** (pasul 1) | Research-ul pe YouTube se face din Chrome-ul lui, prin extensia Claude in Chrome. Înainte să începi, întreabă-l dacă e la Mac. Dacă nu e, așteaptă și pregătește între timp ce se poate face fără Chrome (surse primare, documentare pe web). |
 | Creează repo-urile și pune secretele. **Deja făcut** (25 nov 2026) pentru `siphon-ep004`, `siphon-ep005`, `siphon-ep006` și următoarele | Sesiunea nu poate crea repo-uri (403) și nu introduce niciodată tokenuri. |
-| Aprobă scriptul (pasul 5) | Regula editorială 10. E singurul punct de control până la montaj. |
 | Vede montajul pe telefon și aprobă randarea 4K (pasul 13) | |
 | Alege fișierul video la upload și dă acceptul final (pasul 15) | Chrome e doar de citit pentru computer use, iar extensia nu urcă fișiere mari. |
 
@@ -155,9 +154,9 @@ Scrii pe tiparul episoadelor 001–003 (regula 14 din `CLAUDE.md` și cele două
    - **lista de întrebări:** fiecare întrebare pe care o deschide video-ul (în teaser, în titlu, pe thumbnail, la finalul actelor) e într-un tabel cu momentul în care primește răspuns. Unde răspunsul nu se cunoaște, video-ul **spune explicit** asta („we don't know yet”, „no one has said”). Nicio întrebare nu rămâne fără răspuns sau fără mențiunea că nu se știe. Tabelul intră în `episodes/NNN-slug.md`, secțiunea „Open questions”.
    - **forma pentru voce:** cifre, date și tickere scrise în cuvinte, după lista de pronunții din `presenter/voice.md`. Replicile se termină cu punct, nu cu „—” sau „...” (ZONOS taie ultimul cuvânt).
 
-## 5. Aprobarea scriptului (proprietarul)
+## 5. Scriptul merge mai departe automat (fără aprobare)
 
-Trimite-i scriptul și traducerea în română, plus 3–5 rânduri: unghiul, durata estimată, câte replici are Thomas, ce nu se știe. Pornești vocea și generările doar după aprobare.
+**Regula proprietarului (25 nov 2026): scriptul nu mai așteaptă acceptul lui.** După verificările din pasul 4 (fapte pe surse primare, LanguageTool, lectura ta, tabelul de întrebări), treci direct la voce și la generări, complet automat. Îi trimiți scriptul și traducerea în română doar ca informare, cu 3–5 rânduri: unghiul, durata estimată, câte replici are Thomas, ce nu se știe. Răspunderea editorială (regula 10: doar surse primare, „alleged” până la condamnare, fără speculații) rămâne întreagă la tine; ce nu se confirmă pe sursă primară iese din script înainte de voce.
 
 ## 6. Vocea (CPU, $0)
 
