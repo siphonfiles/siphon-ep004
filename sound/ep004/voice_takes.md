@@ -36,3 +36,12 @@ Toate celelalte replici: `ep004-v1/<id>.wav`.
 
 ### ep004-new1 (script v1.2: e1b, h1–h4; seed 1 și 2)
 ASR pornit (rapoartele 7 și 8).
+
+### Rezultat new1 (ASR 7 + 8)
+Atenție: id-urile nu aveau sufix de seed, deci seed 2 a suprascris seed 1. Fișierele rămase (seed 2) trec la ambele modele: `ep004-new1/{e1b,h1,h2,h3,h4}.wav`.
+
+## Dosarul final de voci (mix v1, 25 nov 2026)
+`ep004-v1/*` + `fix1/e4b_s3→e4b, d10_s4→d10, f7_s2→f7, f8_s2→f8, e4_s2→e4` + `fix2/c4_s6→c4` + `new1/{e1b,h1–h4}` (98 de replici).
+
+## Coloana sonoră v1
+`sound/ep004/ep004_mix.py` → **10:02,3** (602,3 s). Master ffmpeg loudnorm în două treceri: **-14,0 LUFS, vârf -1,5 dBFS**, 48 kHz, AAC 256k → `renders:audio/ep004_audio.m4a`. Cronologia: `graphics/motion/ep004_full.timeline.json`.

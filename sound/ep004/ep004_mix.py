@@ -34,7 +34,7 @@ P += [("voice", "t4"), ("hit",), ("pause", 0.9), ("card", 1.6)]          # 335 W
 P += [("voice", "t5"), ("hit",), ("pause", 0.9)]
 P += [("voice", "t6"), ("hit",), ("pause", 0.9)]
 P += [("voice", "t7"), ("pause", 0.25), ("hit",), ("music", "fade")]
-P += [("pause", 1.4), ("drop",), ("card", 4.0)]                          # title
+P += [("pause", 1.4), ("drop",), ("card", 4.6)]                          # title
 # ---------------- THOMAS (intro, dry) ----------------
 P += V("i1", .5) + V("i2", .6) + [("voice", "i3"), ("hit",), ("pause", SECTION + .4)]
 # ---------------- ACT 1: THE MAN WHO DID EVERYTHING RIGHT ----------------
@@ -43,20 +43,20 @@ P += [("card", 1.5), ("level", "narration"), ("music", "pulse@3")] \
     + [("voice", "a6"), ("hit",), ("pause", .8)] + V("a7", .6) + [("voice", "a8")] + [FADE] + [("pause", .9)] \
     + V("a9", .6) + [("voice", "a10"), ("hit",), ("pause", SECTION)]
 # ---------------- ACT 2: THE BOX (dry, the explainer) ----------------
-P += [("hit",), ("card", 2.0)] + V("b1", .6) + V("b2", .6) + V("b3", .6) + [("voice", "b4"), ("pause", .3), ("card", 2.4)] \
+P += [("hit",), ("card", 2.8)] + V("b1", .6) + V("b2", .6) + V("b3", .6) + [("voice", "b4"), ("pause", .3), ("card", 2.4)] \
     + V("b5", .7) + V("b6", .6) + V("b7", .8) + V("b8", .6) + [("voice", "b9"), ("pause", .3), ("card", 2.0)] \
     + V("b10", .6) + V("b11", .5) + V("b12", .7) + V("b13", .6) + V("b14", .7) + [("voice", "b15"), ("hit",), ("pause", .9)] \
     + V("b16", SECTION)
 # ---------------- ACT 3: THE WARNING (memory_piano) ----------------
-P += [("hit",), ("card", 2.0), ("track", "memory_piano"), ("level", "feature"), ("music", "full@3")] \
+P += [("hit",), ("card", 2.8), ("track", "memory_piano"), ("level", "feature"), ("music", "full@3")] \
     + V("c1", .6) + V("c2", .6) + V("c3", .6) + V("c4", .6) + V("c5", .6) + [("voice", "c6")] + [FADE] + [("pause", .8)] \
     + V("c7", .8) + V("c8", .6) + V("c9", .8) + [("voice", "c10"), ("hit",), ("pause", SECTION)]
 # ---------------- ACT 4: T-MINUS ----------------
-P += [("hit",), ("card", 2.0), ("track", "heist"), ("level", "narration"), ("music", "drums@3")] \
+P += [("hit",), ("card", 2.8), ("track", "heist"), ("level", "narration"), ("music", "drums@3")] \
     + V("d1", .6) + V("d2", .6) + V("d3", .6) + [("voice", "d4"), ("pause", .3), ("card", 1.6)] \
     + [("voice", "d5"), ("pause", .3), ("card", 2.4)] + V("d6", .6) + [("voice", "d7")] + [FADE] + [("pause", .6)] \
-    + [("hit",), ("card", 2.6)] \
-    + [("hit",), ("card", 2.6)] \
+    + [("hit",), ("card", 3.2)] \
+    + [("hit",), ("card", 3.2)] \
     + V("d8", .8) + [("voice", "d9"), ("pause", 1.0)] \
     + [("hit",), ("card", 2.2), ("track", "vault_run"), ("level", "key"), ("music", "full")] \
     + V("d10", .6) + V("d11", .7) + V("d12", .6) + V("d13", .7) + V("d13b", .6) + V("d13c", .6) \
@@ -69,13 +69,13 @@ P += [("card", 1.5)] + V("e1", .6) + [("voice", "e1b"), ("pause", .3), ("card", 
     + V("e5", .6) + V("e6", .6) + V("e7", .6) + [("voice", "e7b")] + [FADE] + [("pause", .8)] \
     + [("voice", "e8"), ("hit",), ("pause", SECTION)]
 # ---------------- ACT 6: THE RETURN ----------------
-P += [("hit",), ("card", 2.0), ("music", "drums@3")] \
+P += [("hit",), ("card", 2.8), ("music", "drums@3")] \
     + V("f1", .6) + V("f2", .6) + V("f3", .6) + [("voice", "f4"), ("pause", .3), ("card", 1.6)] + [("voice", "f5")] + [FADE] \
     + [("pause", .8)] + [("voice", "f6"), ("hit",), ("pause", .9)] + V("f7", .7) + V("f8", SECTION)
 # ---------------- IF YOU OWN ONE (dry, police advice) ----------------
-P += [("card", 2.2)] + V("h1", .6) + V("h2", .7) + V("h3", .7) + V("h4", SECTION)
+P += [("card", 2.8)] + V("h1", .6) + V("h2", .7) + V("h3", .7) + V("h4", SECTION)
 # ---------------- WHO? (dry) ----------------
-P += [("card", 2.4)] + V("g1", .7) + V("g2", .7) + V("g3", .7) + V("g4", .8) + [("voice", "g5"), ("hit",), ("pause", SECTION)]
+P += [("card", 3.0)] + V("g1", .7) + V("g2", .7) + V("g3", .7) + V("g4", .8) + [("voice", "g5"), ("hit",), ("pause", SECTION)]
 # ---------------- FINALE ----------------
 P += [("card", 1.5), ("track", "heist"), ("level", "key"), ("music", "full@3")] \
     + V("k1", .7) + V("k2", .8) + V("k3", .6) + V("k4", 1.0) + V("k5", 1.0) + V("k6", 1.2) \
