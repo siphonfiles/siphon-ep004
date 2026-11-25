@@ -1,0 +1,52 @@
+[
+ {
+  "id": "e1b",
+  "text": "The first freeze came at nine minutes past noon, UTC. Seven hours after the first wallets were drained.",
+  "seed": 1
+ },
+ {
+  "id": "e1b",
+  "text": "The first freeze came at nine minutes past noon, UTC. Seven hours after the first wallets were drained.",
+  "seed": 2
+ },
+ {
+  "id": "h1",
+  "text": "If you own a hardware wallet bought from a shop or a reseller, here's what the police advise.",
+  "seed": 1
+ },
+ {
+  "id": "h1",
+  "text": "If you own a hardware wallet bought from a shop or a reseller, here's what the police advise.",
+  "seed": 2
+ },
+ {
+  "id": "h2",
+  "text": "If you suspect the device, stop using it. Don't type your recovery phrase into it. Contact the maker through its official support.",
+  "seed": 1
+ },
+ {
+  "id": "h2",
+  "text": "If you suspect the device, stop using it. Don't type your recovery phrase into it. Contact the maker through its official support.",
+  "seed": 2
+ },
+ {
+  "id": "h3",
+  "text": "If you think the words have leaked, move what's left to a new wallet, with a new recovery phrase, set up on a device you trust.",
+  "seed": 1
+ },
+ {
+  "id": "h3",
+  "text": "If you think the words have leaked, move what's left to a new wallet, with a new recovery phrase, set up on a device you trust.",
+  "seed": 2
+ },
+ {
+  "id": "h4",
+  "text": "And never share those words. Not with someone who says they're from the wallet company. Not with someone who says they're the police.",
+  "seed": 1
+ },
+ {
+  "id": "h4",
+  "text": "And never share those words. Not with someone who says they're from the wallet company. Not with someone who says they're the police.",
+  "seed": 2
+ }
+]

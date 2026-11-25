@@ -176,6 +176,8 @@ Conventions: `[MUSIC: …]` = music cue · **THOMAS** = Thomas Archer on camera 
 
 **e1** But stablecoins can be frozen. And by noon, Tether was freezing. [S4]
 
+**e1b** The first freeze came at nine minutes past noon, UTC. Seven hours after the first wallets were drained. [CARD: FIRST FREEZE · 12:09 UTC] [S4]
+
 **e2** About ten million dollars stayed locked. [S4]
 
 **e3** The thief had planned for that, too. Twenty-three point seven million dollars in Tether was swapped into U S D D, a token Tether can't freeze. [S4]
@@ -218,6 +220,18 @@ Conventions: `[MUSIC: …]` = music cue · **THOMAS** = Thomas Archer on camera 
 **f7** On the nineteenth of November, Ledger wrote that it is the same incident. Tampered devices outside Southeast Asia. And more may be found. [S13]
 
 **f8** Ledger now offers worried owners an X-ray inspection at its factory in Vierzon, France. [S13]
+
+## IF YOU OWN ONE  (~9:35–10:00)
+
+[CARD: IF YOU OWN ONE · SINGAPORE POLICE ADVICE] [MUSIC: out]
+
+**h1** If you own a hardware wallet bought from a shop or a reseller, here's what the police advise. [S1]
+
+**h2** If you suspect the device, stop using it. Don't type your recovery phrase into it. Contact the maker through its official support. [S1]
+
+**h3** If you think the words have leaked, move what's left to a new wallet, with a new recovery phrase, set up on a device you trust. [S1]
+
+**h4** And never share those words. Not with someone who says they're from the wallet company. Not with someone who says they're the police. [S1]
 
 ## WHO?  (~9:35–10:15)
 
@@ -313,4 +327,5 @@ Conventions: `[MUSIC: …]` = music cue · **THOMAS** = Thomas Archer on camera 
 ## Changes
 
 - **v1 (25 Nov 2026):** first draft.
+- **v1.2 (25 Nov 2026):** +e1b (first Tether freeze, 12:09 UTC, ~7 h after 05:07) and a short practical section h1–h4 from the Singapore police advisory (read directly), to bring the episode to ~10 min; d10 punctuated for the voice.
 - **v1.1 (25 Nov 2026):** self-review. t4 no longer says the devices emptied all 335 wallets (Bitquery: how keys leaked from the other wallets is unknown; Ledger only ties *confirmed* losses to CryptoBilis devices). d15 rewritten (not every drained owner is known to be a Ledger owner); now matches the timeline (drains 05:07–05:56 UTC, first freezes ~12:09 UTC). e8 simplified. LanguageTool en-GB: 4 notes, all intentional ("authorised" en-GB, "No… No… No…" rhythm, "twenty twenty" for the voice, "U S D D" spelled for the voice).

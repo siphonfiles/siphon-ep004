@@ -83,6 +83,7 @@ Doar pentru verificare. Textul care intră în video e cel în engleză, din `00
 
 ## ACTUL 5 — URMĂRIREA
 - **e1** Dar stablecoin-urile pot fi înghețate. Și până la prânz, Tether îngheța.
+- **e1b** Prima înghețare a venit la 12:09 UTC. La șapte ore după ce primele portofele fuseseră golite.
 - **e2** Aproximativ zece milioane de dolari au rămas blocați.
 - **e3** Hoțul se pregătise și pentru asta. 23,7 milioane de dolari în Tether au fost schimbați în USDD, un token pe care Tether nu-l poate îngheța.
 - **e4** Restul a trecut prin THORChain, Chainflip și alte servicii de schimb. În Tornado Cash. Prin Zcash.
@@ -103,6 +104,12 @@ Doar pentru verificare. Textul care intră în video e cel în engleză, din `00
 - **THOMAS f6** Potrivit Bitquery, era aceeași adresă de control.
 - **f7** Pe 19 noiembrie, Ledger a scris că e același incident. Dispozitive modificate în afara Asiei de Sud-Est. Și că s-ar putea găsi și altele.
 - **f8** Ledger le oferă acum proprietarilor îngrijorați o inspecție cu raze X la fabrica din Vierzon, Franța.
+
+## DACĂ AI UNUL
+- **h1** Dacă ai un hardware wallet cumpărat dintr-un magazin sau de la un revânzător, iată ce recomandă poliția.
+- **h2** Dacă bănuiești dispozitivul, nu-l mai folosi. Nu-i mai introduce fraza de recuperare. Contactează producătorul prin suportul oficial.
+- **h3** Dacă crezi că cuvintele au scăpat, mută ce a rămas într-un portofel nou, cu o frază nouă, configurat pe un dispozitiv de încredere.
+- **h4** Și nu da nimănui cuvintele. Nici cuiva care zice că e de la producător. Nici cuiva care zice că e de la poliție.
 
 ## CINE?
 - *(carton: STATUS AS OF LATE NOVEMBER 2026)*
