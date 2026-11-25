@@ -152,7 +152,7 @@ Conventions: `[MUSIC: …]` = music cue · **THOMAS** = Thomas Archer on camera 
 
 [CARD: T-0 · 05:07:48 UTC] [MUSIC: vault run, full]
 
-**d10** At seven minutes past five, twenty-five Tron wallets sign the same approval, within three seconds. [S4]
+**d10** At seven minutes past five. Twenty-five Tron wallets sign the same approval, within three seconds. [S4]
 
 **d11** Twenty-nine million dollars leaves in six seconds. [S4]
 
