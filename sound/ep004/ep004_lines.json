@@ -1,0 +1,467 @@
+[
+ {
+  "id": "t1",
+  "text": "This box has never been opened.",
+  "thomas": false
+ },
+ {
+  "id": "t2",
+  "text": "The plastic is tight. The seal is intact.",
+  "thomas": false
+ },
+ {
+  "id": "t3",
+  "text": "Inside is a genuine hardware wallet. The real chip. The real software.",
+  "thomas": false
+ },
+ {
+  "id": "t4",
+  "text": "On the ninth of October, devices like this one helped empty three hundred and thirty-five wallets.",
+  "thomas": false
+ },
+ {
+  "id": "t5",
+  "text": "About one hundred and two million dollars, by one on-chain count.",
+  "thomas": false
+ },
+ {
+  "id": "t6",
+  "text": "Nobody broke the chip. Nobody cracked the code.",
+  "thomas": false
+ },
+ {
+  "id": "t7",
+  "text": "Someone just read the screen.",
+  "thomas": false
+ },
+ {
+  "id": "i1",
+  "text": "I'm Thomas Archer, the AI narrator of Siphon Files.",
+  "thomas": true
+ },
+ {
+  "id": "i2",
+  "text": "Every claim in this video comes with a source.",
+  "thomas": true
+ },
+ {
+  "id": "i3",
+  "text": "Ledger hasn't confirmed the totals. So we'll tell you who counted.",
+  "thomas": true
+ },
+ {
+  "id": "a1",
+  "text": "On the twenty-ninth of September, one Bitcoin address received eighty coins.",
+  "thomas": false
+ },
+ {
+  "id": "a2",
+  "text": "At the time, that was roughly five million dollars.",
+  "thomas": false
+ },
+ {
+  "id": "a3",
+  "text": "The coins went onto a Ledger. A hardware wallet. A small device that keeps your keys away from the internet.",
+  "thomas": false
+ },
+ {
+  "id": "a4",
+  "text": "It's the advice everyone gets. Don't leave your coins on an exchange. Buy a cold wallet. Write the twenty-four words on paper. Keep them safe.",
+  "thomas": false
+ },
+ {
+  "id": "a5",
+  "text": "The device came from Crypto Bilis. Not a stranger on a marketplace. An authorised Ledger reseller, listed for Malaysia, Indonesia and the Philippines.",
+  "thomas": false
+ },
+ {
+  "id": "a6",
+  "text": "But ten days later, the eighty coins were gone.",
+  "thomas": false
+ },
+ {
+  "id": "a7",
+  "text": "They left in a single Bitcoin block. Together with the coins of one hundred and ten other wallets.",
+  "thomas": false
+ },
+ {
+  "id": "a8",
+  "text": "No phishing link. No fake support call. No malware on a laptop.",
+  "thomas": false
+ },
+ {
+  "id": "a9",
+  "text": "So how do you rob a wallet that never goes online?",
+  "thomas": true
+ },
+ {
+  "id": "a10",
+  "text": "To answer that, we have to open the box.",
+  "thomas": true
+ },
+ {
+  "id": "b1",
+  "text": "A Ledger has two brains.",
+  "thomas": false
+ },
+ {
+  "id": "b2",
+  "text": "The first is a secure chip. It holds your keys, and it's built never to let them out.",
+  "thomas": false
+ },
+ {
+  "id": "b3",
+  "text": "The second is an ordinary chip. It runs the buttons, the Bluetooth. And the screen.",
+  "thomas": false
+ },
+ {
+  "id": "b4",
+  "text": "In twenty twenty, Ledger wrote down a rule for the Nano X. That second chip could be fully compromised, and the funds would still be safe.",
+  "thomas": false
+ },
+ {
+  "id": "b5",
+  "text": "Because the secret never leaves the secure chip. Except once.",
+  "thomas": false
+ },
+ {
+  "id": "b6",
+  "text": "When you set the device up, it shows you your recovery phrase. Twenty-four words. On the screen. So you can copy them down.",
+  "thomas": false
+ },
+ {
+  "id": "b7",
+  "text": "For a few minutes, your most valuable secret is on display.",
+  "thomas": true
+ },
+ {
+  "id": "b8",
+  "text": "Now look behind that screen.",
+  "thomas": false
+ },
+ {
+  "id": "b9",
+  "text": "Researchers who opened tampered units found an extra board, tucked where a strip of padding should be. A microcontroller. A cellular modem. An antenna. And an e-SIM.",
+  "thomas": false
+ },
+ {
+  "id": "b10",
+  "text": "To make room, the original battery had been swapped for a smaller one.",
+  "thomas": false
+ },
+ {
+  "id": "b11",
+  "text": "Ledger's own security team, the Donjon, described what the implant does.",
+  "thomas": false
+ },
+ {
+  "id": "b12",
+  "text": "It reads the data going to the screen. When it sees the recovery words, it decodes them. Then it sends them out over L T E. The mobile network.",
+  "thomas": false
+ },
+ {
+  "id": "b13",
+  "text": "It doesn't touch the secure chip. It doesn't change a single transaction.",
+  "thomas": false
+ },
+ {
+  "id": "b14",
+  "text": "And it doesn't need your laptop or your phone. It brought its own connection.",
+  "thomas": false
+ },
+ {
+  "id": "b15",
+  "text": "No virus to catch. No link to click. Just a box.",
+  "thomas": true
+ },
+ {
+  "id": "b16",
+  "text": "Ledger's genuineness check is built to test the secure chip. And in these devices, the secure chip was the real one.",
+  "thomas": false
+ },
+ {
+  "id": "c1",
+  "text": "But this board wasn't new.",
+  "thomas": false
+ },
+ {
+  "id": "c2",
+  "text": "According to Tibane Labs, a research group that documented the implant, the first public warning about a tampered Nano X appeared on Reddit in August twenty twenty-five.",
+  "thomas": false
+ },
+ {
+  "id": "c3",
+  "text": "This year, the hardware hacker Joe Grand took one apart on stage. He showed the smaller battery, and the board that shouldn't be there.",
+  "thomas": false
+ },
+ {
+  "id": "c4",
+  "text": "On the sixteenth of September, Mark Karpeles posted photos of a newer version. He called it quite an evolution.",
+  "thomas": false
+ },
+ {
+  "id": "c5",
+  "text": "Those research units came from other channels. Online marketplaces in Japan. Not from Crypto Bilis.",
+  "thomas": false
+ },
+ {
+  "id": "c6",
+  "text": "So the implant was public. What nobody had yet shown was a wave of real losses.",
+  "thomas": false
+ },
+ {
+  "id": "c7",
+  "text": "That was about to change.",
+  "thomas": true
+ },
+ {
+  "id": "c8",
+  "text": "Back in March, Crypto Bilis had changed hands.",
+  "thomas": false
+ },
+ {
+  "id": "c9",
+  "text": "Its founders later said the company was sold to a new team, and that they handed over all operations. They haven't named the buyer. They deny any involvement.",
+  "thomas": false
+ },
+ {
+  "id": "c10",
+  "text": "Who owned the shop by October? Nobody has said publicly.",
+  "thomas": true
+ },
+ {
+  "id": "d1",
+  "text": "So the thief started preparing. And the blockchain kept the receipts.",
+  "thomas": false
+ },
+ {
+  "id": "d2",
+  "text": "On the twenty-fourth of September, a withdrawal from the exchange Bybit landed in a wallet on the Tron network.",
+  "thomas": false
+ },
+ {
+  "id": "d3",
+  "text": "That money later paid the attack's fees.",
+  "thomas": false
+ },
+ {
+  "id": "d4",
+  "text": "From the twenty-fifth, the thief ran tests. Twenty-one small loops on Tron. Twenty on Ethereum.",
+  "thomas": false
+ },
+ {
+  "id": "d5",
+  "text": "Remember one thing from this. A single Tron address, acting as the thief's control wallet.",
+  "thomas": false
+ },
+ {
+  "id": "d6",
+  "text": "Meanwhile, the victims kept loading their wallets. Bit query found that about six in ten drained wallets were first funded within the last ninety days.",
+  "thomas": false
+ },
+ {
+  "id": "d7",
+  "text": "Someone had the keys in advance. And waited.",
+  "thomas": false
+ },
+ {
+  "id": "d8",
+  "text": "At four fifty-nine in the morning, UTC, thirty Tron wallets got a new key added. Each paid a one hundred T R X fee.",
+  "thomas": false
+ },
+ {
+  "id": "d9",
+  "text": "The thief didn't steal yet. The thief changed the locks.",
+  "thomas": true
+ },
+ {
+  "id": "d10",
+  "text": "At seven minutes past five, twenty-five Tron wallets sign the same approval, within three seconds.",
+  "thomas": false
+ },
+ {
+  "id": "d11",
+  "text": "Twenty-nine million dollars leaves in six seconds.",
+  "thomas": false
+ },
+ {
+  "id": "d12",
+  "text": "Then B N B Chain. Polygon. Ethereum. Solana.",
+  "thomas": false
+ },
+ {
+  "id": "d13",
+  "text": "At five fifty-four, one Bitcoin block. One hundred and eleven wallets, emptied together. The eighty coins were in it.",
+  "thomas": false
+ },
+ {
+  "id": "d13b",
+  "text": "Another wallet, first funded on the fifteenth of September, lost seven million dollars in Tether in a single transaction.",
+  "thomas": false
+ },
+ {
+  "id": "d13c",
+  "text": "One Tron wallet had taken in thirty-three million dollars since October began. It looked like a business.",
+  "thomas": false
+ },
+ {
+  "id": "d14",
+  "text": "By Bit query's count, the full tally reached one hundred and two million dollars, from three hundred and thirty-five wallets, on six networks.",
+  "thomas": false
+ },
+ {
+  "id": "d15",
+  "text": "Every one of those owners was told cold storage is safe.",
+  "thomas": true
+ },
+ {
+  "id": "e1",
+  "text": "But stablecoins can be frozen. And by noon, Tether was freezing.",
+  "thomas": false
+ },
+ {
+  "id": "e2",
+  "text": "About ten million dollars stayed locked.",
+  "thomas": false
+ },
+ {
+  "id": "e3",
+  "text": "The thief had planned for that, too. Twenty-three point seven million dollars in Tether was swapped into U S D D, a token Tether can't freeze.",
+  "thomas": false
+ },
+ {
+  "id": "e4",
+  "text": "The rest moved through Thor Chain, Chainflip and other swap services. Into Tornado Cash. Through Z-cash.",
+  "thomas": false
+ },
+ {
+  "id": "e4b",
+  "text": "Back on the ninth itself, Mark Karpeles opened a Nano X sent to him from Malaysia. It arrived still in its shrink-wrap.",
+  "thomas": false
+ },
+ {
+  "id": "e4c",
+  "text": "Behind the screen, where the padding should be, he found the board.",
+  "thomas": false
+ },
+ {
+  "id": "e5",
+  "text": "On the tenth of October, Ledger confirmed an implant in one victim's device. On the thirteenth, it described the L T E board. It said every confirmed loss involved devices sold through Crypto Bilis.",
+  "thomas": false
+ },
+ {
+  "id": "e6",
+  "text": "Two days later, it blamed a sophisticated criminal group, and tightened the rules for its resellers. No devices on display. Handed over at purchase. No resale of returns.",
+  "thomas": false
+ },
+ {
+  "id": "e7",
+  "text": "Then Singapore police reported at least two cases since the tenth of September. About three point five million Singapore dollars. Devices bought in local shops.",
+  "thomas": false
+ },
+ {
+  "id": "e7b",
+  "text": "In Europe, the electronics chain MediaMarkt paused its Ledger sales.",
+  "thomas": false
+ },
+ {
+  "id": "e8",
+  "text": "So it wasn't only one reseller. And it wasn't only online.",
+  "thomas": true
+ },
+ {
+  "id": "f1",
+  "text": "Then, on the fourteenth of November, at seven forty-three in the evening, UTC, four Tron wallets emptied.",
+  "thomas": false
+ },
+ {
+  "id": "f2",
+  "text": "Ten minutes later, nine Bitcoin wallets, in one block. Then more.",
+  "thomas": false
+ },
+ {
+  "id": "f3",
+  "text": "This time, the devices didn't come from Southeast Asia. A Ledger Flex and a Ledger Stax bought in Dubai. A Flex bought in Berlin.",
+  "thomas": false
+ },
+ {
+  "id": "f4",
+  "text": "One point six eight million dollars, from sixteen wallets.",
+  "thomas": false
+ },
+ {
+  "id": "f5",
+  "text": "And in the same block as the drain, one Tron address paid the network fees.",
+  "thomas": false
+ },
+ {
+  "id": "f6",
+  "text": "According to Bit query, it was the same control address.",
+  "thomas": true
+ },
+ {
+  "id": "f7",
+  "text": "On the nineteenth of November, Ledger wrote that it is the same incident. Tampered devices outside Southeast Asia. And more may be found.",
+  "thomas": false
+ },
+ {
+  "id": "f8",
+  "text": "Ledger now offers worried owners an X-ray inspection at its factory in Vierzon, France.",
+  "thomas": false
+ },
+ {
+  "id": "g1",
+  "text": "As we make this video, we found no public arrest and no charges.",
+  "thomas": false
+ },
+ {
+  "id": "g2",
+  "text": "We don't know who fitted the boards, or where along the chain. We don't know who bought Crypto Bilis.",
+  "thomas": false
+ },
+ {
+  "id": "g3",
+  "text": "Ledger hasn't confirmed how many devices were tampered with, or how much was lost in total.",
+  "thomas": false
+ },
+ {
+  "id": "g4",
+  "text": "And we don't know if it's over. Ledger itself says more devices may surface.",
+  "thomas": false
+ },
+ {
+  "id": "g5",
+  "text": "Here's what we do know. The chip was never broken.",
+  "thomas": true
+ },
+ {
+  "id": "k1",
+  "text": "Somewhere, there's a box like this one. Plastic tight. Seal intact.",
+  "thomas": false
+ },
+ {
+  "id": "k2",
+  "text": "A seal proves the box hasn't been opened since someone closed it. It doesn't tell you who that someone was.",
+  "thomas": false
+ },
+ {
+  "id": "k3",
+  "text": "And the thief's money trail starts with a withdrawal from an exchange. Exchanges keep records.",
+  "thomas": false
+ },
+ {
+  "id": "k4",
+  "text": "Whether those records lead to a name, no one has said. So far.",
+  "thomas": false
+ },
+ {
+  "id": "k5",
+  "text": "Before you trust a seal, ask who sealed it.",
+  "thomas": true
+ },
+ {
+  "id": "k6",
+  "text": "I'm Thomas Archer. This was Siphon Files.",
+  "thomas": true
+ }
+]
