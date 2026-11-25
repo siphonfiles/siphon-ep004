@@ -28,3 +28,11 @@ Diferențe ignorate (doar scriere): cifre („eighty” → 80), „dollars” �
 | c4 | — | — | „Karpeles” greșit la large-v3 în toate variantele → **fix2**: seed 5/6/7 + scriere fonetică „Kar-peh-less” seed 2/3/4 |
 
 Toate celelalte replici: `ep004-v1/<id>.wav`.
+
+### Rezultat fix2 (ASR 5 + 6)
+| replică | ales | durată | de ce |
+|---|---|---|---|
+| c4 | `ep004-fix2/c4_s6.wav` | 6,4 → 6,5 s | „Karpeles” corect la ambele modele (și s5, s7); scrierea fonetică „Kar-peh-less” iese mai rău |
+
+### ep004-new1 (script v1.2: e1b, h1–h4; seed 1 și 2)
+ASR pornit (rapoartele 7 și 8).
