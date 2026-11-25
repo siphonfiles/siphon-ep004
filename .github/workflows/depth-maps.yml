@@ -1,0 +1,35 @@
+name: depth maps (Depth Anything V2 Small, CPU)
+
+on:
+  workflow_dispatch:
+    inputs:
+      list:
+        description: "JSON cu imaginile (run-N/id) de pe branch-ul renders"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  depth:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
+        with:
+          ref: renders
+          path: rbranch
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: pip install -q torch --index-url https://download.pytorch.org/whl/cpu && pip install -q transformers pillow numpy
+      - name: Depth
+        run: python scripts/depth_maps.py "${{ inputs.list }}" rbranch/illustrations depth_out
+      - name: Publish to renders branch
+        run: |
+          cd rbranch
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          mkdir -p illustrations/depth && cp ../depth_out/* illustrations/depth/
+          git add illustrations/depth && git commit -m "depth maps ${GITHUB_RUN_NUMBER}" && git push origin HEAD:renders

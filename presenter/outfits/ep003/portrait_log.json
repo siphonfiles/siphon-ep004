@@ -1,0 +1,23 @@
+[
+  {
+    "outfit": "camel_overshirt",
+    "prompt_sentence": "He wears only a plain camel-brown wool overshirt with a soft pointed collar and matching fabric-covered buttons, buttoned up, completely unadorned smooth fabric.",
+    "seed": 596067,
+    "seconds": 10.1,
+    "file": "presenter/outfits/ep003/portrait_camel_overshirt_896x1152.png"
+  },
+  {
+    "outfit": "olive_shirt",
+    "prompt_sentence": "He wears only a plain dark olive green cotton shirt with a soft open collar and matching fabric-covered buttons, completely unadorned smooth fabric.",
+    "seed": 596067,
+    "seconds": 6.6,
+    "file": "presenter/outfits/ep003/portrait_olive_shirt_896x1152.png"
+  },
+  {
+    "outfit": "rust_corduroy",
+    "prompt_sentence": "He wears only a plain rust-brown fine-wale corduroy shirt with a soft pointed collar and matching fabric-covered buttons, buttoned up, completely unadorned fabric.",
+    "seed": 596067,
+    "seconds": 6.6,
+    "file": "presenter/outfits/ep003/portrait_rust_corduroy_896x1152.png"
+  }
+]

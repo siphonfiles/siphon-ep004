@@ -1,0 +1,35 @@
+name: languagetool check (CPU)
+on:
+  workflow_dispatch:
+    inputs:
+      lines:
+        description: "spoken lines JSON"
+        default: sound/epNNN/epNNN_lines.json
+      scenes:
+        description: "scene files with on-screen texts (space separated)"
+        default: graphics/motion/epNNN.py
+      name:
+        default: epNNN
+permissions:
+  contents: write
+jobs:
+  lt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - run: pip install -q language_tool_python
+      - run: python scripts/lt_check.py "${{ inputs.lines }}" lt_report.md ${{ inputs.scenes }}
+      - name: Publish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          mkdir -p reports && cp lt_report.md "reports/${{ inputs.name }}_languagetool.md"
+          git add reports && git commit -qm "${{ inputs.name }} LanguageTool report" && (git push || (git pull --rebase && git push))

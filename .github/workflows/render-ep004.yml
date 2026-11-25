@@ -1,0 +1,126 @@
+name: render ep004 (CPU, parallel parts)
+
+# Episode 002 montage in GitHub Actions: parts in parallel -> concat + sound -> Release.
+# scale=1 -> 1920x1080 (preview, ~4x fewer pixels than 4K); scale=2 -> 3840x2160 (final).
+on:
+  workflow_dispatch:
+    inputs:
+      scale:
+        description: "1 = 1080p preview, 2 = 4K"
+        default: "1"
+        required: true
+      stills:
+        description: "Only stills at these times (space separated, e.g. '10 95 300'); empty = full render"
+        default: ""
+        required: false
+
+permissions:
+  contents: write
+
+env:
+  TAG: ep004-render-${{ github.run_number }}
+  SIPHON_SCALE: ${{ inputs.scale }}
+  SIPHON_THEME: ep004
+
+jobs:
+  stills:
+    if: inputs.stills != ''
+    runs-on: ubuntu-22.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - name: Tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq python3-cairo python3-numpy python3-pil ffmpeg fonts-lato fonts-ibm-plex fonts-jetbrains-mono fontconfig > /dev/null
+          for pk in fonts-inter fonts-firacode fonts-noto-core; do sudo apt-get install -y -qq $pk > /dev/null || echo "no $pk"; done; fc-list | grep -iE 'Inter|Fira Code|Noto Serif' | head -3 || true
+          mkdir -p ~/.local/share/fonts && cp fonts/*.ttf ~/.local/share/fonts/ && fc-cache -f > /dev/null
+      - name: Thomas frames
+        run: bash scripts/ep004_clip_frames.sh
+      - name: Stills
+        run: |
+          cd graphics/motion && mkdir -p ../../stills
+          ARGS=""; for t in ${{ inputs.stills }}; do ARGS="$ARGS $t ../../stills/still_$t.png"; done
+          /usr/bin/python3 ep004.py ep004_full.timeline.json none x.mp4 --still $ARGS
+      - name: Publish to renders branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          mkdir -p /tmp/pub && cp stills/*.png /tmp/pub/
+          git fetch --depth 1 origin renders && git switch -c renders FETCH_HEAD
+          mkdir -p "stills/ep004-run-${GITHUB_RUN_NUMBER}" && cp /tmp/pub/* "stills/ep004-run-${GITHUB_RUN_NUMBER}/"
+          git add stills && git commit -qm "ep004 stills run ${GITHUB_RUN_NUMBER}" && git push -q origin renders
+
+  release:
+    if: inputs.stills == ''
+    runs-on: ubuntu-22.04
+    steps:
+      - run: gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --title "$TAG" --notes "Montaj automat ep. 003 (scale ${{ inputs.scale }}, run ${{ github.run_number }})" --prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+  parts:
+    needs: release
+    runs-on: ubuntu-22.04
+    timeout-minutes: 240
+    strategy:
+      fail-fast: false
+      max-parallel: 18
+      matrix:
+        job: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+    steps:
+      - uses: actions/checkout@v5
+      - name: Tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq python3-cairo python3-numpy python3-pil ffmpeg fonts-lato fonts-ibm-plex fonts-jetbrains-mono fontconfig > /dev/null
+          for pk in fonts-inter fonts-firacode fonts-noto-core; do sudo apt-get install -y -qq $pk > /dev/null || echo "no $pk"; done; fc-list | grep -iE 'Inter|Fira Code|Noto Serif' | head -3 || true
+          mkdir -p ~/.local/share/fonts && cp fonts/*.ttf ~/.local/share/fonts/ && fc-cache -f > /dev/null
+      - name: Thomas frames
+        run: bash scripts/ep004_clip_frames.sh
+      - name: Render 2 parts of 20 s
+        run: |
+          cd graphics/motion
+          TOTAL=$(python3 -c "import json;print(json.load(open('ep004_full.timeline.json'))['total'])")
+          for k in 0 1; do
+            N=$(( ${{ matrix.job }} * 2 + k )); A=$((N*20)); B=$((A+20))
+            if python3 -c "import sys;sys.exit(0 if $A < $TOTAL else 1)"; then
+              /usr/bin/python3 ep004.py ep004_full.timeline.json none ../../part_$(printf %02d $N).mp4 --from $A --to $B
+            fi
+          done
+      - name: Upload parts
+        run: ls part_*.mp4 >/dev/null 2>&1 && gh release upload "$TAG" part_*.mp4 --repo "$GITHUB_REPOSITORY" --clobber || echo "no parts in this slot"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+  assemble:
+    needs: parts
+    runs-on: ubuntu-22.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - name: Download parts + audio
+        run: |
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --pattern "part_*.mp4" --dir parts
+          git init -q rb && cd rb && git fetch -q --depth 1 "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}" renders \
+            && git show FETCH_HEAD:audio/ep004_audio.m4a > ../ep004_audio.m4a && cd ..
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Concat + sound + 720p preview
+        run: |
+          ls parts/*.mp4 | sort | sed "s#^#file '$PWD/#;s#\$#'#" > list.txt
+          OUT=siphon_files_ep004_scale${{ inputs.scale }}.mp4
+          ffmpeg -v error -y -f concat -safe 0 -i list.txt -i ep004_audio.m4a -map 0:v -map 1:a -c copy -shortest -movflags +faststart $OUT
+          ffmpeg -v error -y -i $OUT -vf scale=1280:720 -c:v libx264 -preset veryfast -crf 24 -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart siphon_files_ep004_preview_720p.mp4
+          ls -la *.mp4
+      - name: Publish and clean up the parts
+        run: |
+          gh release upload "$TAG" siphon_files_*.mp4 --repo "$GITHUB_REPOSITORY" --clobber
+          if [ "${{ inputs.scale }}" = "2" ]; then
+            cp thumbnails/ep004/ep004_thumbnail_FINAL.jpg episodes/publish/003-youtube.md episodes/publish/003-description.txt episodes/publish/003-captions-en.srt .
+            gh release upload "$TAG" ep004_thumbnail_FINAL.jpg 003-youtube.md 003-description.txt 003-captions-en.srt --repo "$GITHUB_REPOSITORY" --clobber
+          fi
+          for f in parts/*.mp4; do gh release delete-asset "$TAG" "$(basename $f)" --repo "$GITHUB_REPOSITORY" -y; done
+        env:
+          GH_TOKEN: ${{ github.token }}

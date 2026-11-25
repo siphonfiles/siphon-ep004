@@ -1,0 +1,27 @@
+name: birefnet cutouts
+# Decupează obiectul principal din ilustrații cu BiRefNet (MIT), pe CPU. Fără cotă, fără bani.
+on:
+  workflow_dispatch:
+    inputs:
+      images:
+        default: "illustrations/ep004/img/b07_badge_lanyard.jpg illustrations/ep004/img/b04_security_appliance.jpg illustrations/ep004/img/b11_phone_nightstand.jpg"
+      out:
+        default: illustrations/ep004/cutouts
+permissions:
+  contents: write
+jobs:
+  cut:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          pip install --quiet torch torchvision --index-url https://download.pytorch.org/whl/cpu
+          pip install --quiet "transformers>=4.45,<5" timm kornia einops pillow
+      - run: python scripts/birefnet_cut.py "${{ inputs.out }}" ${{ inputs.images }}
+      - run: |
+          git config user.name "siphon-bot"; git config user.email "bot@users.noreply.github.com"
+          git add "${{ inputs.out }}" && git commit -qm "BiRefNet cutouts (run ${{ github.run_number }})" && git pull -q --rebase && git push -q

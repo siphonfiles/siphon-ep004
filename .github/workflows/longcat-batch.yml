@@ -1,0 +1,48 @@
+name: longcat-batch (Thomas, several clips in a row via ZeroGPU)
+# Rulează joburile pe rând; se oprește la primul eșec (fără reîncercări, ca să nu ardă cota).
+# Fiecare clip reușit se salvează imediat în presenter/clips/.
+on:
+  workflow_dispatch:
+    inputs:
+      jobs:
+        description: "Joburi separate prin virgulă (ex. presenter/clips/inputs/thomas_k7_1.json,...)"
+        required: true
+      dest:
+        description: "Folder for the finished clips"
+        default: "presenter/clips"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: longcat
+  cancel-in-progress: false
+
+jobs:
+  clips:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: pip install -q gradio_client
+      - name: ffmpeg (needed to extract the seed frame for chained clips)
+        run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - name: Generate one by one
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          IFS=',' read -ra J <<< "${{ inputs.jobs }}"
+          for j in "${J[@]}"; do
+            echo "=== $j"
+            rm -rf out
+            python scripts/longcat_clip.py "$j" out || { echo "FAILED at $j - stopping"; exit 1; }
+            D="${{ inputs.dest }}"; mkdir -p "$D" && cp out/* "$D/"
+            git add "$D" && git commit -qm "Thomas clip: $(ls out/*.mp4 | xargs -n1 basename)"
+            git pull --rebase -q && git push -q
+          done

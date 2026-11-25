@@ -1,0 +1,33 @@
+name: longcat-clip (Thomas, LongCat-Video-Avatar 1.6 via ZeroGPU)
+
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "Job JSON in the repo"
+        required: true
+        default: presenter/clips/inputs/thomas_outro.json
+
+permissions:
+  contents: write
+
+jobs:
+  clip:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: pip install -q gradio_client
+      - name: Generate
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python scripts/longcat_clip.py "${{ inputs.job }}" out
+      - name: Save clip into the repo (presenter/clips)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          mkdir -p presenter/clips && cp out/* presenter/clips/
+          git add presenter/clips && git commit -m "Thomas clip: $(ls out/*.mp4 | xargs -n1 basename)" && git pull --rebase -q && git push

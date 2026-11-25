@@ -1,0 +1,8 @@
+{
+  "portrait": "presenter/outfits/ep003/portrait_olive_shirt_896x1152.png",
+  "plate": "presenter/set_candidates/plate_20251120.png",
+  "seed": 11,
+  "steps": 40,
+  "prompt": "Place the man from image 1 into the office from image 2. He sits in the chair behind the desk, upper body visible from the waist up, positioned slightly left of centre, facing the camera and looking straight into the lens with a calm, composed expression. Both forearms rest on the desk and his hands lie still and relaxed on the desk surface, near the case folder, fingers natural. On the desk, objects from this case (Coldcard: bitcoin hardware wallets whose secret words were guessable): a closed manila case folder under his hands, three small identical matte black pocket-sized hardware wallet devices in a neat row to his left, a small loose pile of white six-sided dice beside them, a small brushed steel plate with rows of tiny blurred stamped marks, and a small brass safe-deposit box key on a ring. All surfaces are plain and unbranded, every printed character too small and blurred to read. Keep the warm brass desk lamp on the right exactly where it is. Keep his face, hair, short stubble and his clothing exactly as in image 1: He wears only a plain dark olive green cotton shirt with a soft open collar and matching fabric-covered buttons, completely unadorned smooth fabric. Soft even frontal light on his face, warm amber lamp light on the desk, background softly out of focus. Photorealistic, 16:9.",
+  "seconds": 99.4
+}

@@ -1,0 +1,43 @@
+name: sfx gen (Stable Audio Open Small, CPU)
+on:
+  workflow_dispatch:
+    inputs:
+      jobs:
+        default: sound/ep004/sfx/jobs.json
+permissions:
+  contents: write
+jobs:
+  gen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Free disk space
+        run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL /usr/local/share/boost && df -h /
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          P="pip install --quiet --retries 10 --timeout 120 --no-cache-dir"
+          $P torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          python -c "import torch,torchaudio;print(f'torch=={torch.__version__}');print(f'torchaudio=={torchaudio.__version__}')" > constraints.txt; cat constraints.txt
+          # every later install keeps the CPU torch (no CUDA wheels, they filled the disk)
+          $P -c constraints.txt --extra-index-url https://download.pytorch.org/whl/cpu stable-audio-tools einops pytorch_lightning torchmetrics k-diffusion alias-free-torch vector-quantize-pytorch x-transformers local-attention ema-pytorch einops-exts safetensors sentencepiece "transformers<5" auraloss encodec prefigure
+          $P -c constraints.txt "numpy<2" && $P --force-reinstall --no-deps "PyWavelets==1.6.0"
+          df -h /
+      - name: Generate
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python scripts/sfx_gen.py "${{ inputs.jobs }}" sfx_out
+      - name: Listening file + mp3s
+        run: |
+          D=sound/ep004/sfx/candidates; mkdir -p $D; : > list.txt
+          ffmpeg -v error -y -f lavfi -i anullsrc=r=44100:cl=stereo -t 0.8 gap.wav
+          for f in $(ls sfx_out/*.wav | sort); do
+            ffmpeg -v error -y -i $f -codec:a libmp3lame -q:a 3 $D/$(basename ${f%.wav}).mp3
+            echo "file '$PWD/$f'" >> list.txt; echo "file '$PWD/gap.wav'" >> list.txt; done
+          ffmpeg -v error -y -f concat -safe 0 -i list.txt -codec:a libmp3lame -q:a 3 $D/ALL_in_order.mp3
+          ls sfx_out/*.wav | sort | xargs -n1 basename > $D/ORDER.txt; cp sfx_out/log.json $D/
+          git config user.name "siphon-bot"; git config user.email "bot@users.noreply.github.com"
+          git add $D && git commit -qm "SFX candidates (Stable Audio Open Small, run ${{ github.run_number }})" && git pull -q --rebase && git push -q

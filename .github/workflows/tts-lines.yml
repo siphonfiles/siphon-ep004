@@ -1,0 +1,45 @@
+name: tts-lines (Thomas voice for a list of lines, CPU)
+
+on:
+  workflow_dispatch:
+    inputs:
+      lines:
+        description: "Path to a lines JSON file in the repo"
+        required: true
+        default: sound/teaser/ep001_teaser_lines.json
+      name:
+        description: "Output folder name on the voice-tests branch"
+        required: true
+        default: ep001-teaser
+
+permissions:
+  contents: write
+
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - uses: actions/cache@v5
+        with:
+          path: ~/.cache/huggingface
+          key: hf-zonos3-mini-v1
+      - name: Install
+        run: |
+          pip install --index-url https://download.pytorch.org/whl/cpu torch
+          pip install "transformers>=4.57" soundfile numpy
+      - name: Generate
+        run: python scripts/tts_lines.py "${{ inputs.lines }}" out
+      - name: Publish to voice-tests branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          mkdir -p /tmp/pub && cp out/* /tmp/pub/
+          git fetch --depth 1 origin voice-tests || true
+          if git rev-parse --verify -q origin/voice-tests; then git switch -c voice-tests origin/voice-tests; else git switch --orphan voice-tests; fi
+          mkdir -p "lines/${{ inputs.name }}" && cp /tmp/pub/* "lines/${{ inputs.name }}/"
+          git add lines && git commit -m "tts-lines ${{ inputs.name }} (run ${GITHUB_RUN_NUMBER})" && git push origin voice-tests

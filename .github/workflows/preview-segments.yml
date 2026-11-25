@@ -1,0 +1,41 @@
+name: ep004 preview segments
+# Randează doar anumite intervale din ep. 002 (1080p -> 720p cu sunet), lipite într-un singur MP4 pe branch-ul renders.
+on:
+  workflow_dispatch:
+    inputs:
+      ranges:
+        description: "Intervale A-B în secunde, separate prin spațiu"
+        required: true
+permissions:
+  contents: write
+env:
+  SIPHON_THEME: ep004
+  SIPHON_SCALE: "1"
+jobs:
+  seg:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v5
+      - name: Tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq python3-cairo python3-numpy python3-pil ffmpeg fonts-lato fonts-ibm-plex fonts-jetbrains-mono fontconfig > /dev/null
+          for pk in fonts-inter fonts-firacode fonts-noto-core; do sudo apt-get install -y -qq $pk > /dev/null || echo "no $pk"; done; fc-list | grep -iE 'Inter|Fira Code|Noto Serif' | head -3 || true
+          mkdir -p ~/.local/share/fonts && cp fonts/*.ttf ~/.local/share/fonts/ && fc-cache -f > /dev/null
+      - run: bash scripts/ep004_clip_frames.sh
+      - name: Render ranges
+        run: |
+          git fetch -q --depth 1 origin renders && git show FETCH_HEAD:audio/ep004_audio.m4a > audio.m4a
+          cd graphics/motion; i=0; : > ../../list.txt
+          for r in ${{ inputs.ranges }}; do A=${r%-*}; B=${r#*-}
+            /usr/bin/python3 ep004.py ep004_full.timeline.json none ../../v_$i.mp4 --from $A --to $B
+            ffmpeg -v error -y -i ../../v_$i.mp4 -ss $A -to $B -i ../../audio.m4a -map 0:v -map 1:a -vf scale=1280:720 -c:v libx264 -crf 22 -preset veryfast -c:a aac -b:a 160k ../../s_$i.mp4
+            echo "file '$PWD/../../s_$i.mp4'" >> ../../list.txt; i=$((i+1)); done
+          cd ../.. && ffmpeg -v error -y -f concat -safe 0 -i list.txt -c copy segments_preview.mp4
+      - name: Publish
+        run: |
+          git config user.name "github-actions[bot]"; git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          cp segments_preview.mp4 /tmp/ && git switch -q -c renders FETCH_HEAD
+          mkdir -p previews && cp /tmp/segments_preview.mp4 previews/ep004_segments_run${GITHUB_RUN_NUMBER}.mp4
+          git add previews && git commit -qm "ep004 segments preview ${GITHUB_RUN_NUMBER}" && git push -q origin renders

@@ -1,0 +1,35 @@
+name: asr on final mix (CPU)
+on:
+  workflow_dispatch:
+    inputs:
+      model:
+        default: large-v3
+permissions:
+  contents: write
+jobs:
+  asr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null && pip install -q faster-whisper
+      - name: Cut lines from the final audio
+        run: |
+          git fetch --depth 1 origin renders
+          git show FETCH_HEAD:audio/ep004_audio.m4a > /tmp/ep004_audio.m4a
+          python3 scripts/cut_mix_lines.py /tmp/ep004_audio.m4a graphics/motion/ep004_full.timeline.json sound/ep004/ep004_lines.json /tmp/mixlines
+      - env:
+          ASR_MODEL: ${{ inputs.model }}
+          ASR_LOWP: "0.6"
+        run: python scripts/asr_check.py /tmp/mixlines asr_report.md
+      - name: Publish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          cp asr_report.md /tmp/
+          git fetch --depth 1 origin renders && git switch -c renders FETCH_HEAD
+          mkdir -p reports && cp /tmp/asr_report.md reports/ep004_mix_asr_${GITHUB_RUN_NUMBER}_${{ inputs.model }}.md
+          git add reports && git commit -m "ep004 mix ASR ${GITHUB_RUN_NUMBER} ${{ inputs.model }}" && (git push origin HEAD:renders || (git pull --rebase origin renders && git push origin HEAD:renders))
