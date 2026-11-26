@@ -1,0 +1,23 @@
+[
+  {
+    "outfit": "burgundy_crewneck",
+    "prompt_sentence": "He wears only a plain dark burgundy crew-neck sweater in fine knit wool, completely unadorned smooth fabric.",
+    "seed": 596067,
+    "seconds": 6.0,
+    "file": "presenter/outfits/ep004/portrait_burgundy_crewneck_896x1152.png"
+  },
+  {
+    "outfit": "wine_merino",
+    "prompt_sentence": "He wears only a plain deep wine-red merino crew-neck sweater, fine smooth knit, completely unadorned fabric.",
+    "seed": 596067,
+    "seconds": 5.9,
+    "file": "presenter/outfits/ep004/portrait_wine_merino_896x1152.png"
+  },
+  {
+    "outfit": "oxblood_cotton",
+    "prompt_sentence": "He wears only a plain oxblood-red cotton crew-neck sweater with a soft ribbed collar, completely unadorned fabric.",
+    "seed": 596067,
+    "seconds": 5.8,
+    "file": "presenter/outfits/ep004/portrait_oxblood_cotton_896x1152.png"
+  }
+]
