@@ -1,0 +1,30 @@
+{
+ "style": " Cinematic 3D render for a premium investigative documentary, stylized realism with clean matte materials, low-key lighting with deep violet-ink and charcoal shadows, a single cool ultraviolet key light as the only strong accent, soft volumetric haze, shallow depth of field, 35mm lens, clearly separated foreground, midground and background layers, calm restrained mood, fine film grain. No text, no logos, no brand marks.",
+ "images": [
+  {
+   "id": "b13_untouched_chip_v2",
+   "seed": 5300,
+   "prompt": "Macro of a green circuit board with two square chips: the left chip enclosed by a thin glowing protective ring of ultraviolet light, the right chip with a thin extra copper wire soldered to its leg running off the board."
+  },
+  {
+   "id": "h1_owner_kitchen",
+   "seed": 5301,
+   "prompt": "A person seen from behind at a kitchen table at night holding a small black hardware wallet device in one hand, a closed laptop beside them, a single ultraviolet pendant light."
+  },
+  {
+   "id": "e7b_store_aisle",
+   "seed": 5302,
+   "prompt": "An empty aisle in a large electronics store at night, one shelf section completely cleared, price rails without labels, cold ultraviolet ceiling light."
+  },
+  {
+   "id": "k2_gloved_box",
+   "seed": 5303,
+   "prompt": "A gloved hand seen from above holding a small plain shrink-wrapped dark box up to an ultraviolet inspection lamp, the plastic film glinting."
+  },
+  {
+   "id": "g4_shelf_one_red",
+   "seed": 5304,
+   "prompt": "A long shelf of identical small sealed dark boxes in a dark storeroom, one box in the middle faintly glowing red from inside."
+  }
+ ]
+}
