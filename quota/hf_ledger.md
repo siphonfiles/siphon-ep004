@@ -22,3 +22,5 @@ Zilele 2–6: câte 3 clipuri/zi (~32 min), în ordinea i3, a9, a10 · b7, b15, 
 Refaceri ilustrații t1_sealed_box, a7_empty_wallets, d11_drain (~1 min) + clipurile i3, a9, a10 (~32 min) → ~33 min.
 
 **26 nov, 11:15:** proprietarul vede 32 min consumate (estimarea mea: ~34). Rămân 8 min → 27 de imagini (`set3_extra.json`, ~6,3 min) → total ~38,3 min. Refacerile t1/a7/d11 se mută aici, deci ziua 2 = doar i3, a9, a10 + ce rămâne pe imagini.
+
+**Plan revizuit (26 nov, 11:20):** zilele 2–4 doar clipuri, câte 4/zi (3 în cota gratuită + al 4-lea cu ~$0,30 din credite): ziua 2 i3, a9, a10, b7 · ziua 3 b15, c7, c10, d9 · ziua 4 d15, e8, f6, g5 · ziua 5 k5, k6 (+ rezervă pentru refaceri). Cost estimat: ~$0,30 × 3 = ~$0,90.
