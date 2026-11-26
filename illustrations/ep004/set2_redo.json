@@ -1,0 +1,20 @@
+{
+ "style": " Cinematic 3D render for a premium investigative documentary, stylized realism with clean matte materials, low-key lighting with deep violet-ink and charcoal shadows, a single cool ultraviolet key light as the only strong accent, soft volumetric haze, shallow depth of field, 35mm lens, clearly separated foreground, midground and background layers, calm restrained mood, fine film grain. No text, no logos, no brand marks.",
+ "images": [
+  {
+   "id": "t1_sealed_box_v2",
+   "seed": 5101,
+   "prompt": "A small plain matte black rectangular box completely wrapped in tight glossy clear plastic shrink-wrap film with crisp folded seams, alone on a dark wooden table, a thin line of ultraviolet light reflecting on the plastic film, everything else in shadow."
+  },
+  {
+   "id": "a7_empty_wallets_v2",
+   "seed": 5102,
+   "prompt": "A long row of small identical open steel cash boxes with their lids open, all completely empty, on a dark table receding into the distance, a cold red warning light falling across them from the side."
+  },
+  {
+   "id": "d11_drain_v2",
+   "seed": 5103,
+   "prompt": "Dozens of thin glowing ultraviolet streams of light flowing out of many small open boxes on a dark floor and converging toward a single dark drain hole in the centre, the drain rimmed with dim red light, seen from above at an angle."
+  }
+ ]
+}
