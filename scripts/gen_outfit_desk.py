@@ -26,9 +26,9 @@ g, _ = q.predict(images=[{"image": handle_file(p), "caption": None} for p in (po
                  rewrite_prompt=False, api_name="/infer")
 item = g[0]; img = item.get("image") if isinstance(item, dict) else item
 path = img["path"] if isinstance(img, dict) else img
-src = os.path.join(OUT, "thomas_ref_ep003_source_1344x768.png"); shutil.copy(path, src)
+src = os.path.join(OUT, "thomas_ref_ep004_source_1344x768.png"); shutil.copy(path, src)
 im = Image.open(src).convert("RGB").resize((1920, 1097), Image.LANCZOS).crop((0, 12, 1920, 1092))
-im.save(os.path.join(OUT, "thomas_ref_ep003_1920x1080.png"))
+im.save(os.path.join(OUT, "thomas_ref_ep004_1920x1080.png"))
 json.dump(dict(portrait=portrait, plate=PLATE, seed=11, steps=40, prompt=PROMPT, seconds=round(time.time() - t, 1)),
           open(os.path.join(OUT, "desk_log.json"), "w"), indent=2)
 print("done", round(time.time() - t, 1), "s")
