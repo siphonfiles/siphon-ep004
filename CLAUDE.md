@@ -13,6 +13,7 @@
 | 2026-11-25 | **Regulă nouă (Proprietarul): scripturile nu mai cer aprobarea lui** — de la ep. 005, scriptul verificat trece direct la voce și generări, automat. Notat în `PIPELINE-episod-nou.md` (pasul 5) și în `siphon-core` |
 | 2026-11-25 | **Identitate vizuală ep. 004** (`SIPHON_THEME=ep004`, de implementat): fundal violet-cerneală foarte închis (#130F1A), accent **ultraviolet** (#9D7BFF, ca o lumină de inspecție / raze X), roșu doar la furt; motiv de fundal: inele de semnal celular care pulsează încet + linii fine de circuit + o bandă de scanare „raze X”; fonturi OFL. Ținuta lui Thomas: **pulover cu guler rotund, vișiniu închis** (burgundy); pe birou: o cutie mică sigilată în folie, o lupă de bijutier, o șurubelniță de precizie, o bobină de fir subțire de antenă (fără logo-uri). Nu repetă ep. 002 (petrol/cyan) sau ep. 003 (grafit/verde smarald) |
 
+| 2026-11-26 | **Cota HF rămasă se folosește** (Proprietarul): ziua 1 a consumat 32 min (văzut de proprietar) → 8 min rămase, nu ajung pentru un clip (~10,7) → 27 de imagini (3 refaceri + 24 de scene noi, `illustrations/ep004/set3_extra.json`, ~6,3 min). Regula: ≥ 11 min rămase → clip Thomas, altfel imagini până la ~38,5 min |
 ---
 
 

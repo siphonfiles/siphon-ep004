@@ -20,3 +20,5 @@ Zilele 2–6: câte 3 clipuri/zi (~32 min), în ordinea i3, a9, a10 · b7, b15, 
 
 ## Plan ziua 2 (start 27 nov 2026, 05:33)
 Refaceri ilustrații t1_sealed_box, a7_empty_wallets, d11_drain (~1 min) + clipurile i3, a9, a10 (~32 min) → ~33 min.
+
+**26 nov, 11:15:** proprietarul vede 32 min consumate (estimarea mea: ~34). Rămân 8 min → 27 de imagini (`set3_extra.json`, ~6,3 min) → total ~38,3 min. Refacerile t1/a7/d11 se mută aici, deci ziua 2 = doar i3, a9, a10 + ce rămâne pe imagini.

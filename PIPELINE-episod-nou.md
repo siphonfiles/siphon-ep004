@@ -193,6 +193,7 @@ Mixajul e în `sound/epNNN/epNNN_mix.py`, pornit din `sound/ep003/ep003_mix.py`.
 |---|---|
 | Ce se generează | **Doar** clipurile cu Thomas, **doar la 720p** (LongCat-Video-Avatar 1.6, Space-ul `victor/LongCat-Video-Avatar-1.6`, DBCache faster, seed 42), **doar pe Hugging Face**. Plus imaginile (Z-Image-Turbo) și referința nouă a lui Thomas (Z-Image + Qwen-Image-Edit-2511). Fără Kaggle. Fără clipuri video cu altceva decât Thomas. |
 | Cota | **Cel mult 40 de minute de cotă ZeroGPU pe zi, cu tot cu imaginile.** Plănuiește **≤ 38 de minute** (2 minute de rezervă). Fără credite plătite: nimic peste cota gratuită. |
+| Minutele rămase (Proprietarul, 26 nov 2026) | **Nu lăsa cotă nefolosită.** După rularea zilei, citește cota consumată (proprietarul o vede pe pagina HF; altfel estimează din registru). Dacă rămân **≥ 11 minute**, mai faci **un clip cu Thomas** (~10,7 min). Dacă rămân mai puțin, generezi **imagini** (~14 s fiecare) până te apropii de 40 de minute, păstrând ~1,5 min de rezervă (ex.: 8 min rămase → ~27 de imagini). Imaginile în plus = refaceri + scene noi pentru variație. Totul se notează în `quota/hf_ledger.md`. |
 | Teste | **Nimic de probă.** Se generează doar ce intră în episod. Probele de aspect se fac pe CPU, din materialul existent. |
 | Ora de start | Fiecare zi de generare pornește **la cel puțin 25 de ore după startul precedent**: cota se resetează la 24 h după prima folosire, plus o oră de rezervă. |
 | Durata totală | Toate clipurile cu Thomas ale unui episod se generează în **cel mult 6 zile**. |
