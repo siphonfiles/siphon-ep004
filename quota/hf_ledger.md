@@ -5,7 +5,7 @@ Regula: cel mult 40 min de cotă pe zi (plănuit ≤ 38), start la **≥ 25 h** 
 | Start real | Ce s-a generat | GPU raportat (s) | Cotă estimată (min) | Eșecuri | Următorul start cel mai devreme |
 |---|---|---|---|---|---|
 | 2026-11-25 03:31 | (ultima rulare a ep. 003, referință) | — | — | — | 2026-11-26 04:31 |
-| 2026-11-26 04:32 | ziua 1: portrete ținută (3, 18 s) · ilustrații set1 (33, 466 s) · birou Qwen (99 s) · LongCat i1+i2 pornit 04:52 | 583 + clipuri | ~13 + ~21,4 = ~34 | 0 (desk: doar copierea a căzut, fără cotă în plus) | 2026-11-27 05:32 |
+| 2026-11-26 04:32 | ziua 1: portrete ținută (3, 18 s) · ilustrații set1 (33, 466 s) · birou Qwen (99 s) · LongCat i1+i2 (04:52–05:04, ambele bune) | 583 + 2 clipuri | ~13 + ~21,4 = ~34 | 0 (desk: doar copierea a căzut, fără cotă în plus) | 2026-11-27 05:32 |
 
 ## Plan ziua 1 (start cel mai devreme 26 nov 2026, 04:31; programat 04:32)
 | pas | estimare cotă |
@@ -17,3 +17,6 @@ Regula: cel mult 40 min de cotă pe zi (plănuit ≤ 38), start la **≥ 25 h** 
 | **total** | **~33 min** (≤ 38, fără credite) |
 
 Zilele 2–6: câte 3 clipuri/zi (~32 min), în ordinea i3, a9, a10 · b7, b15, c7 · c10, d9, d15 · e8, f6, g5 · k5, k6 (+ rezervă pentru o refacere).
+
+## Plan ziua 2 (start 27 nov 2026, 05:33)
+Refaceri ilustrații t1_sealed_box, a7_empty_wallets, d11_drain (~1 min) + clipurile i3, a9, a10 (~32 min) → ~33 min.

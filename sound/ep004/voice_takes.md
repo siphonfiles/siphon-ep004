@@ -45,3 +45,9 @@ Atenție: id-urile nu aveau sufix de seed, deci seed 2 a suprascris seed 1. Fiș
 
 ## Coloana sonoră v1
 `sound/ep004/ep004_mix.py` → **10:02,3** (602,3 s). Master ffmpeg loudnorm în două treceri: **-14,0 LUFS, vârf -1,5 dBFS**, 48 kHz, AAC 256k → `renders:audio/ep004_audio.m4a`. Cronologia: `graphics/motion/ep004_full.timeline.json`.
+
+## Clipuri Thomas (LongCat 1.6, 720p)
+| clip | stare |
+|---|---|
+| thomas_e4_i1_720p | bun (26 nov, ziua 1): aceeași față, pulover vișiniu, buze sincron, gesturi moderate cu mâinile (păstrate, ca la ep. 001) |
+| thomas_e4_i2_720p | bun (26 nov, ziua 1) |
