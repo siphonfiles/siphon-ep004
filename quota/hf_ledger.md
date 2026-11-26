@@ -5,6 +5,7 @@ Regula: cel mult 40 min de cotă pe zi (plănuit ≤ 38), start la **≥ 25 h** 
 | Start real | Ce s-a generat | GPU raportat (s) | Cotă estimată (min) | Eșecuri | Următorul start cel mai devreme |
 |---|---|---|---|---|---|
 | 2026-11-25 03:31 | (ultima rulare a ep. 003, referință) | — | — | — | 2026-11-26 04:31 |
+| 2026-11-26 04:32 | ziua 1: outfit-ref portrait (3) + illustrations set1 (33) pornite; urmează desk + i1, i2 | | | | 2026-11-27 05:32 |
 
 ## Plan ziua 1 (start cel mai devreme 26 nov 2026, 04:31; programat 04:32)
 | pas | estimare cotă |
