@@ -21,3 +21,10 @@ Refacerile (3 × ~14 s) intră în ziua 2, în cota zilei. Ecranele (t7, c2, a1,
 | b7_secret_display | ecran gol → primește pe CPU lista de cuvinte estompate (regula „niciun ecran gol”) |
 
 Cu set1 + set3: **57 de imagini bune** pentru ~10 min, deci setul e complet. De acum, cota HF merge pe clipurile lui Thomas.
+
+## set4_tail (26 nov 2026, 12:00, renders `illustrations/run-4/`) — 5 imagini, 79,5 s GPU
+| imagine | verdict |
+|---|---|
+| b13_untouched_chip_v2, e7b_store_aisle, g4_shelf_one_red | bune (b13_v2 înlocuiește b13) |
+| h1_owner_kitchen | bună; ecranul laptopului primește conținut pe CPU |
+| k2_gloved_box | ciudată (cutia legată ca o pungă) → doar dacă e nevoie, scurt |

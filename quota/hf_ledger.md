@@ -28,3 +28,5 @@ Refaceri ilustrații t1_sealed_box, a7_empty_wallets, d11_drain (~1 min) + clipu
 **26 nov, 11:15–11:25 (set3_extra):** 27 de imagini, **457,9 s GPU (~7,6 min)** — mai mult decât estimarea (~17 s/imagine, nu 14). Total ziua 1 ≈ 32 (văzut de proprietar) + 7,6 ≈ **~39,6 min**, sub 40. Lecție: pentru calcule folosește ~17 s/imagine.
 
 **26 nov, 11:57:** proprietarul vede **38,2/40 min** → 1,8 min rămase → 5 imagini (~85 s, `set4_tail.json`: b13 refăcută + 4 variante utile) → ~39,6 min. Un clip (~10,7 min) ar fi luat ~$0,9 din credite într-o zi cu imagini → nu.
+
+**26 nov, 12:00 (set4_tail):** 5 imagini, 79,5 s GPU. Prima pornire (11:58) a picat înainte de generare (jobul nu ajunsese încă pe GitHub), fără cotă. Ziua 1 închisă la ~39,5 min. **Ziua 1 gata; nimic altceva pe HF până la 27 nov, 05:33.**
