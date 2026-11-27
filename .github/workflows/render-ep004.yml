@@ -34,7 +34,9 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq python3-cairo python3-numpy python3-pil ffmpeg fonts-lato fonts-ibm-plex fonts-jetbrains-mono fontconfig > /dev/null
           for pk in fonts-montserrat fonts-ebgaramond fonts-inter fonts-firacode fonts-noto-core; do sudo apt-get install -y -qq $pk > /dev/null || echo "no $pk"; done; fc-list | grep -iE 'Inter|Fira Code|Noto Serif' | head -3 || true
-          mkdir -p ~/.local/share/fonts && cp fonts/*.ttf ~/.local/share/fonts/ && fc-cache -f > /dev/null
+          mkdir -p ~/.local/share/fonts && cp fonts/*.ttf ~/.local/share/fonts/
+          for w in Regular Medium SemiBold Bold; do curl -fsSL -o ~/.local/share/fonts/Montserrat-$w.ttf "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/Montserrat-$w.ttf" || echo "no Montserrat-$w"; done
+          fc-cache -f > /dev/null; fc-list | grep -ic montserrat || true
       - name: Thomas frames
         run: bash scripts/ep004_clip_frames.sh
       - name: Stills
@@ -75,7 +77,9 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq python3-cairo python3-numpy python3-pil ffmpeg fonts-lato fonts-ibm-plex fonts-jetbrains-mono fontconfig > /dev/null
           for pk in fonts-montserrat fonts-ebgaramond fonts-inter fonts-firacode fonts-noto-core; do sudo apt-get install -y -qq $pk > /dev/null || echo "no $pk"; done; fc-list | grep -iE 'Inter|Fira Code|Noto Serif' | head -3 || true
-          mkdir -p ~/.local/share/fonts && cp fonts/*.ttf ~/.local/share/fonts/ && fc-cache -f > /dev/null
+          mkdir -p ~/.local/share/fonts && cp fonts/*.ttf ~/.local/share/fonts/
+          for w in Regular Medium SemiBold Bold; do curl -fsSL -o ~/.local/share/fonts/Montserrat-$w.ttf "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/Montserrat-$w.ttf" || echo "no Montserrat-$w"; done
+          fc-cache -f > /dev/null; fc-list | grep -ic montserrat || true
       - name: Thomas frames
         run: bash scripts/ep004_clip_frames.sh
       - name: Render 2 parts of 20 s

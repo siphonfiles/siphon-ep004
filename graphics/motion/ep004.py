@@ -32,6 +32,16 @@ PALE = (0.85, 0.82, 1.0)
 REDL = (1.0, 0.15, 0.2)
 
 
+def thomas(ctx, t, d, **p):
+    """Thomas, pushed in 3.5% from the top so the dark front edge of the desk stays out of frame."""
+    ctx.save()
+    ctx.translate(E.W / 2, 0)
+    ctx.scale(1.035, 1.035)
+    ctx.translate(-E.W / 2, 0)
+    S.presenter(ctx, t, d, **p)
+    ctx.restore()
+
+
 def thomas_shots(tl):
     if not os.path.exists(CLIP_PLAN):
         return []
@@ -104,7 +114,7 @@ def overlay_thomas(T, shots):
     for a, b, fr, t0, cam in shots:
         clip = dict(frames=fr, start=t0 - a, **FIT720)
         lt = 0.6 if a == first else 99
-        out.append((a, b, S.presenter, dict(image_path=THOMAS_REF, lower_third_at=lt, clip=clip,
+        out.append((a, b, thomas, dict(image_path=THOMAS_REF, lower_third_at=lt, clip=clip,
                                              zoom=CLOSE if cam == "C" else None)))
     return out
 
@@ -254,7 +264,7 @@ def build(tl):
     IL(s("c8"), s("c9"), "c8_shop_shutter", "in", kicker="MARCH 2026 · CRYPTOBILIS", line="The shop changes hands.",
        source="[S6]", **OUT)
     IL(s("c9"), s("c10"), "c9_handshake_papers", "in", kicker="THE FOUNDERS' ACCOUNT",
-       line="Sold to a new team. Buyer not named. They deny any involvement.", source="[S6]", warm=False,
+       line="Sold to a new team, buyer not named. The founders deny any involvement.", source="[S6]", warm=False,
        flick=fl(1740, 140, 380, "flicker", 0.28, 13))
     c = card(e("c10"))
     add(s("c10"), c, S.statement, line="Who owned the shop by October? Nobody has said publicly.")
@@ -412,7 +422,7 @@ def check_unique(T):
 
 def check_no_flash(T):
     bad = [(round(a, 2), round(b, 2)) for a, b, fn, p in T
-           if b - a < 1.0 and fn is not S.black and fn is not S.presenter]
+           if b - a < 1.0 and fn is not S.black and fn is not thomas]
     if bad:
         raise SystemExit(f"FLASH: scenes shorter than 1 s at {bad} - fix the cut before rendering")
 

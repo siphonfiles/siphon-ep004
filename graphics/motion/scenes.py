@@ -733,6 +733,9 @@ def chat_deleted(ctx, t, d, header="Firm × Drift contributors", source=None):
         source_tag(ctx, source, a)
 
 
+STAMP = (0.62, 0.12, 0.20)
+
+
 def dossier(ctx, t, d, stamp, lines=(), source=None):
     a = fade_io(t, d)
     rgba(ctx, (0.80, 0.74, 0.62), a * 0.9)
@@ -750,12 +753,12 @@ def dossier(ctx, t, d, stamp, lines=(), source=None):
         ctx.translate(960, 700)
         ctx.rotate(-0.12)
         ctx.scale(1 + (1 - s) * 0.6, 1 + (1 - s) * 0.6)
-        rgba(ctx, (0.85, 0.45, 0.05), a * s * 0.9)
+        rgba(ctx, STAMP, a * s * 0.9)
         ctx.set_line_width(8)
         rrect(ctx, -440, -70, 880, 140, 10)
         ctx.stroke()
         for i, ln in enumerate(stamp.split("\n")):
-            text(ctx, ln, 0, -10 + i * 52, (0.85, 0.45, 0.05), a * s, align="center", face=MONO, size=40,
+            text(ctx, ln, 0, -10 + i * 52, STAMP, a * s, align="center", face=MONO, size=40,
                  tracking=4)
         ctx.restore()
     if source:
@@ -1241,9 +1244,10 @@ def illus(ctx, t, d, name, move="in", kicker=None, line=None, statement=None, so
         rgba(ctx, (0, 0, 0), dim * a)
         ctx.paint()
     if kicker or line:
-        g = cairo.LinearGradient(0, H * 0.45, 0, H)
+        g = cairo.LinearGradient(0, H * 0.42, 0, H)
         g.add_color_stop_rgba(0, 0, 0, 0, 0)
-        g.add_color_stop_rgba(1, 0, 0, 0, 0.78 * a)
+        g.add_color_stop_rgba(0.55, 0.03, 0.02, 0.06, 0.66 * a)
+        g.add_color_stop_rgba(1, 0.03, 0.02, 0.06, 0.92 * a)
         ctx.set_source(g)
         ctx.paint()
         p = ease_out(prog(t, 0.3, 0.8))
@@ -1258,7 +1262,8 @@ def illus(ctx, t, d, name, move="in", kicker=None, line=None, statement=None, so
     if statement:
         g = cairo.LinearGradient(0, H * 0.35, 0, H)
         g.add_color_stop_rgba(0, 0, 0, 0, 0)
-        g.add_color_stop_rgba(1, 0, 0, 0, 0.8 * a)
+        g.add_color_stop_rgba(0.6, 0.03, 0.02, 0.06, 0.62 * a)
+        g.add_color_stop_rgba(1, 0.03, 0.02, 0.06, 0.92 * a)
         ctx.set_source(g)
         ctx.paint()
         p = ease_out(prog(t, 0.4, 0.9))

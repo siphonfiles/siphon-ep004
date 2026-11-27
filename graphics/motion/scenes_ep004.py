@@ -761,7 +761,7 @@ def quote_v(ctx, t, d, quote, who, source, v=0):
         _mono(ctx, who, W - 300, 430 + len(lines) * 112 + 40, a, GREY, 24, "right")
     elif v == 3:    # transcript panel, typed in mono
         _panel(ctx, 260, 300, W - 520, 480, a, 10)
-        _mono(ctx, "TRANSCRIPT · " + who, 300, 280, a, GREY, 20)
+        _mono(ctx, who, 300, 280, a, GREY, 22)
         n = int(len(quote) * clamp(prog(t, 0.2, max(d * 0.5, 0.6))))
         lines = wrap(ctx, quote[:n], W - 640, MONO, 56, False)
         for i, ln in enumerate(lines):
@@ -977,9 +977,9 @@ def _chip(ctx, x, y, w, h, a, col, label, sub, glow=0.0):
         ctx.move_to(px, y + h)
         ctx.line_to(px, y + h + 16)
     ctx.stroke()
-    text(ctx, label, x + w / 2, y + h / 2 - 4, INK, a, align="center", face=MONO, size=34)
-    for j, ln in enumerate(wrap(ctx, sub, w - 60, MONO, 24, False)):
-        text(ctx, ln, x + w / 2, y + h / 2 + 44 + j * 32, GREY, a, align="center", face=MONO, size=24, bold=False)
+    text(ctx, label, x + w / 2, y + h / 2 - 14, INK, a, align="center", face=MONO, size=46)
+    for j, ln in enumerate(wrap(ctx, sub, w - 50, MONO, 29, False)):
+        text(ctx, ln, x + w / 2, y + h / 2 + 46 + j * 38, GREY, a, align="center", face=MONO, size=29, bold=False)
 
 
 def two_brains(ctx, t, d, second_at=2.0, screen_at=None, source=None):
