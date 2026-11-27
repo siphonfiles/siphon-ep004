@@ -51,3 +51,7 @@ Atenție: id-urile nu aveau sufix de seed, deci seed 2 a suprascris seed 1. Fiș
 |---|---|
 | thomas_e4_i1_720p | bun (26 nov, ziua 1): aceeași față, pulover vișiniu, buze sincron, gesturi moderate cu mâinile (păstrate, ca la ep. 001) |
 | thomas_e4_i2_720p | bun (26 nov, ziua 1) |
+| thomas_e4_i3_720p | bun (27 nov, ziua 2) |
+| thomas_e4_a9_720p | bun (27 nov), gesturi moderate |
+| thomas_e4_a10_720p | bun (27 nov) |
+| thomas_e4_b7_720p | **eșuat** (GPU task aborted) → ziua 5 |

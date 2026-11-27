@@ -6,7 +6,7 @@ Regula: cel mult 40 min de cotă pe zi (plănuit ≤ 38), start la **≥ 25 h** 
 |---|---|---|---|---|---|
 | 2026-11-25 03:31 | (ultima rulare a ep. 003, referință) | — | — | — | 2026-11-26 04:31 |
 | 2026-11-26 04:32 | ziua 1: portrete ținută (3, 18 s) · ilustrații set1 (33, 466 s) · birou Qwen (99 s) · LongCat i1+i2 (04:52–05:04, ambele bune) | 583 + 2 clipuri | ~13 + ~21,4 = ~34 | 0 (desk: doar copierea a căzut, fără cotă în plus) | 2026-11-27 05:32 |
-| 2026-11-27 05:34 | ziua 2: LongCat i3, a9, a10, b7 (4 clipuri, zi doar cu clipuri) | | ~42,8 (≈ $0,30 din credite) | | 2026-11-28 06:34 |
+| 2026-11-27 05:34 | ziua 2: LongCat i3, a9, a10 bune (321/319/328 s); **b7 eșuat** („GPU task aborted” după ~245 s, limita de 240 s GPU a Space-ului) | 3 clipuri + 1 abort | ~32 + până la ~11 pierdute = ≤ ~43 (≤ ~$0,30 din credite; cifra exactă o vede proprietarul pe pagina HF) | b7 (nu se reia azi) | 2026-11-28 06:34 |
 
 ## Plan ziua 1 (start cel mai devreme 26 nov 2026, 04:31; programat 04:32)
 | pas | estimare cotă |
@@ -31,3 +31,5 @@ Refaceri ilustrații t1_sealed_box, a7_empty_wallets, d11_drain (~1 min) + clipu
 **26 nov, 11:57:** proprietarul vede **38,2/40 min** → 1,8 min rămase → 5 imagini (~85 s, `set4_tail.json`: b13 refăcută + 4 variante utile) → ~39,6 min. Un clip (~10,7 min) ar fi luat ~$0,9 din credite într-o zi cu imagini → nu.
 
 **26 nov, 12:00 (set4_tail):** 5 imagini, 79,5 s GPU. Prima pornire (11:58) a picat înainte de generare (jobul nu ajunsese încă pe GitHub), fără cotă. Ziua 1 închisă la ~39,5 min. **Ziua 1 gata; nimic altceva pe HF până la 27 nov, 05:33.**
+
+**27 nov:** b7 a căzut pe limita de 240 s a Space-ului public (al 4-lea clip la rând; primele trei au mers normal). Se reface în ziua 5, împreună cu k5, k6. Zilele 3–4 rămân cu 4 clipuri; dacă al 4-lea cade din nou, revin la 3 clipuri/zi.
