@@ -33,3 +33,5 @@ Refaceri ilustrații t1_sealed_box, a7_empty_wallets, d11_drain (~1 min) + clipu
 **26 nov, 12:00 (set4_tail):** 5 imagini, 79,5 s GPU. Prima pornire (11:58) a picat înainte de generare (jobul nu ajunsese încă pe GitHub), fără cotă. Ziua 1 închisă la ~39,5 min. **Ziua 1 gata; nimic altceva pe HF până la 27 nov, 05:33.**
 
 **27 nov:** b7 a căzut pe limita de 240 s a Space-ului public (al 4-lea clip la rând; primele trei au mers normal). Se reface în ziua 5, împreună cu k5, k6. Zilele 3–4 rămân cu 4 clipuri; dacă al 4-lea cade din nou, revin la 3 clipuri/zi.
+
+**27 nov, 08:50 (captura proprietarului):** ZeroGPU **40,0/40 min, „Over usage”**; credite $11,03 → **$11,02**; „Current period usage” $40,97 → $40,98. Deci ziua 2 a costat **$0,01**, iar trecerea pe credite funcționează. b7 a fost oprit la ~0,1 min după pragul de 40. Cauza rămâne nedovedită: limita de 240 s a Space-ului (clip mai lent) sau oprire la trecerea pragului. Test fără cost: al 4-lea clip din ziua 3; dacă pică la fel → 3 clipuri/zi.
