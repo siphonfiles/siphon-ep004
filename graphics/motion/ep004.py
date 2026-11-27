@@ -32,6 +32,10 @@ PALE = (0.85, 0.82, 1.0)
 REDL = (1.0, 0.15, 0.2)
 
 
+def blank(ctx, t, d, **p):
+    """Nothing but the theme backdrop (used where a leftover of a card would only flash)."""
+
+
 def thomas(ctx, t, d, **p):
     """Thomas, pushed in 3.5% from the top so the dark front edge of the desk stays out of frame."""
     ctx.save()
@@ -73,10 +77,11 @@ def _absorb_slivers(T, shots):
     for a, b, fn, p in T:
         for sh in shots:
             sa, sb, fr, t0 = sh[0], sh[1], sh[2], sh[3]
-            if a < sb < b and b - sb < 1.0 and not any(o[0] <= sb < o[1] for o in shots if o is not sh):
+            if a < sb < b and b - sb < 1.6 and not any(o[0] <= sb < o[1] for o in shots if o is not sh):
                 n = _clip_len(fr)
-                if b <= t0 + (n if n > 1 else 5.0) - 0.02:
-                    sh[1] = b
+                end = t0 + (n if n > 1 else 5.0) - 0.02
+                if min(b, end) > sb:          # hold Thomas (silent, still moving) instead of a leftover of the card
+                    sh[1] = min(b, end)
     return [tuple(x) for x in shots]
 
 
@@ -105,7 +110,7 @@ def overlay_thomas(T, shots):
             pieces = nxt
         for pa, pb in pieces:
             if pb - pa < 1.0 and (pa, pb) != (a, b):
-                out.append((pa, pb, S.black, {}))        # a sliver would flash: black instead
+                out.append((pa, pb, blank, {}))          # a sliver would flash: plain backdrop instead
             elif pa == a:
                 out.append((pa, pb, fn, p))
             else:
@@ -330,7 +335,7 @@ def build(tl):
        flick=fl(1830, 600, 420, "flicker", 0.28, 14))
     add(s("e5"), s("e6"), S.timeline, title="LEDGER", source="[S2]",
         points=[("10 OCT", "Confirms an implant in one victim's device"), ("13 OCT", "Describes the LTE board"),
-                ("13 OCT ·", "Confirmed losses: devices sold through CryptoBilis")])
+                ("13 OCT", "Confirmed losses: devices sold through CryptoBilis")])
     k = frac("e6", 0.36)
     IL(s("e6"), k, "e5_announcement", "in", kicker="15 OCTOBER · LEDGER", line="“A sophisticated criminal group.”",
        source="[S13]", warm=False, glows=[dict(kind="beam", poly=[(1180, 0), (1420, 0), (1700, 1000), (1200, 1000)],
@@ -422,7 +427,7 @@ def check_unique(T):
 
 def check_no_flash(T):
     bad = [(round(a, 2), round(b, 2)) for a, b, fn, p in T
-           if b - a < 1.0 and fn is not S.black and fn is not thomas]
+           if b - a < 1.0 and fn is not S.black and fn is not blank and fn is not thomas]
     if bad:
         raise SystemExit(f"FLASH: scenes shorter than 1 s at {bad} - fix the cut before rendering")
 

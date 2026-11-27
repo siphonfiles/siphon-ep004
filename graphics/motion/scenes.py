@@ -846,7 +846,7 @@ def timeline(ctx, t, d, points, title=None, source=None):
     if title:
         text(ctx, title, 200, 300, AMBER, a, face=MONO, size=34, bold=False, tracking=6)
     n = len(points)
-    x0, x1, y = 260, 1660, 560
+    x0, x1, y = 300, 1620, 520
     p = ease_in_out(prog(t, 0.2, d * 0.7))
     rgba(ctx, DIM, a)
     ctx.rectangle(x0, y - 2, x1 - x0, 4)
@@ -860,9 +860,9 @@ def timeline(ctx, t, d, points, title=None, source=None):
         rgba(ctx, AMBER if q > 0.5 else DIM, a)
         ctx.arc(x, y, 14, 0, 2 * math.pi)
         ctx.fill()
-        text(ctx, lab, x, y - 50, INK, a * q, align="center", face=MONO, size=40)
-        for j, ln in enumerate(wrap(ctx, sub, 320, MONO, 26, False)):
-            text(ctx, ln, x, y + 70 + j * 36, GREY, a * q, align="center", face=MONO, size=26, bold=False)
+        text(ctx, lab, x, y - 54, INK, a * q, align="center", face=MONO, size=52)
+        for j, ln in enumerate(wrap(ctx, sub, 420, MONO, 34, False)):
+            text(ctx, ln, x, y + 84 + j * 46, GREY, a * q, align="center", face=MONO, size=34, bold=False)
     if source:
         source_tag(ctx, source, a)
 

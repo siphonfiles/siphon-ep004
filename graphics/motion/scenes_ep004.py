@@ -760,12 +760,15 @@ def quote_v(ctx, t, d, quote, who, source, v=0):
         _bar(ctx, W - 250, 360, 6, (len(lines) * 112 + 40) * p, a)
         _mono(ctx, who, W - 300, 430 + len(lines) * 112 + 40, a, GREY, 24, "right")
     elif v == 3:    # transcript panel, typed in mono
-        _panel(ctx, 260, 300, W - 520, 480, a, 10)
-        _mono(ctx, who, 300, 280, a, GREY, 22)
+        full = wrap(ctx, quote, W - 640, MONO, 72, False)
+        ph = 150 + len(full) * 100
+        y0 = (H - ph) / 2
+        _panel(ctx, 260, y0, W - 520, ph, a, 10)
+        _mono(ctx, who, 300, y0 - 24, a, GREY, 24)
         n = int(len(quote) * clamp(prog(t, 0.2, max(d * 0.5, 0.6))))
-        lines = wrap(ctx, quote[:n], W - 640, MONO, 56, False)
+        lines = wrap(ctx, quote[:n], W - 640, MONO, 72, False)
         for i, ln in enumerate(lines):
-            text(ctx, ln, 320, 420 + i * 80, AMBER, a, face=MONO, size=56, bold=False)
+            text(ctx, ln, 330, y0 + 125 + i * 100, AMBER, a, face=MONO, size=72, bold=False)
     elif v == 4:    # who as kicker on top, words appear one by one
         _mono(ctx, who, 220, 330, a, AMBER, 24)
         words = quote.split()
