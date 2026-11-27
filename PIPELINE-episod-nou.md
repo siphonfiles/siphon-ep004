@@ -91,6 +91,8 @@ Scopul e un caz cu **cerere reală** și **ofertă slabă**. Pot fi cazuri noi (
    | Concurență | canalele de urmărit: Coin Bureau, Gloam, fern, Lume, Crumb, DW, Patrick Boyle |
 
    Notează unghiurile pe care concurența le-a folosit deja, ca să le eviți.
+
+   **Ce arată datele reale (27 nov 2026, `research/competitor-performance-2026-11.md`):** cererea contează mai mult decât concurența mică. Hack-urile de nișă cu cerere mică (Drift, Bitget) au plafon jos: canalele noi fac acolo sute de vizualizări, chiar și Coin Bureau ~70k. Prioritate la subiectele cu: (a) **un caz uriaș cât e fierbinte** (Gloam, canal nou, 2,5M pe Binance la ~1 săptămână după hack); (b) **un brand sau un caz pe care lumea îl caută de ani** (Ledger, Mt. Gox, Bitfinex, Thodex, QuadrigaCX), chiar cu mai multă concurență, dacă există un unghi nou; (c) **un om în centrul poveștii**, nu un exploit tehnic. Dacă în timpul producției apare un hack mare nou, semnalează-l imediat proprietarului ca episod rapid.
 3. **Psihologia audienței** pentru fiecare dintre cei 3 finaliști:
    - **cine** se uită: bărbați de 18–49 de ani, deținători de crypto, oameni pasionați de securitate, fani true crime;
    - **ce frică sau ce nevoie** atinge cazul: „poate să mi se întâmple și mie”, auto-protecție, satisfacția „eu n-aș fi căzut”, curiozitatea „cum e posibil”;
@@ -340,6 +342,7 @@ Total: 2 + 5 × 3 = **17 clipuri**.
    - „Inside X” a mers bine (≈2,5× în studiul vidIQ);
    - cifra din titlu = cifra din primele 30 s;
    - fără clickbait neplătit în video.
+   - **tiparul care câștigă la documentarele mari (27 nov 2026):** o persoană/un grup + suma + o răsturnare concretă („How a 15-Year-Old Stole $24,000,000 in Bitcoin”, „They Stole $240,000,000 Then Got Kidnapped”); propune cel puțin o variantă pe tiparul ăsta lângă „Inside X”.
 3. 3–5 propuneri cu argumentul fiecăreia. Recomanzi una.
 
 ## 12. Thumbnail-uri
@@ -412,3 +415,7 @@ Modelul e `siphon-ep003` › `episodes/publish/003-youtube.md` + `003-descriptio
 - **Credențiale:** niciodată. Proprietarul se loghează singur.
 - **`CLAUDE.md`** din repo-ul episodului (și din `siphon-core`, pentru reguli generale) se actualizează după fiecare decizie, cu commit.
 - Preferințele noi ale proprietarului, primite la vizionare, intră în `siphon-core` › `CLAUDE.md` › secțiunea 8 și se aplică din prima la episodul următor.
+
+## Regulă de ritm (Proprietarul, 27 nov 2026)
+
+**Nicio zi de așteptare între etape.** Montajul (tema, scenele, cartoanele, `epNNN.py`) începe **imediat ce sunetul și imaginile sunt gata**, pe CPU, în paralel cu zilele de clipuri Thomas; clipurile care lipsesc au locuri rezervate. În ziua în care intră ultimul clip pleacă și previzualizarea 720p către proprietar, iar titlul, thumbnail-urile, descrierea și subtitrările se pregătesc tot în paralel. La ep. 004 montajul a fost început cu două zile întârziere: de evitat.
