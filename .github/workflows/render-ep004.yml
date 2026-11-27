@@ -1,6 +1,6 @@
 name: render ep004 (CPU, parallel parts)
 
-# Episode 002 montage in GitHub Actions: parts in parallel -> concat + sound -> Release.
+# Episode 004 montage in GitHub Actions: parts in parallel -> concat + sound -> Release.
 # scale=1 -> 1920x1080 (preview, ~4x fewer pixels than 4K); scale=2 -> 3840x2160 (final).
 on:
   workflow_dispatch:
@@ -33,7 +33,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq python3-cairo python3-numpy python3-pil ffmpeg fonts-lato fonts-ibm-plex fonts-jetbrains-mono fontconfig > /dev/null
-          for pk in fonts-inter fonts-firacode fonts-noto-core; do sudo apt-get install -y -qq $pk > /dev/null || echo "no $pk"; done; fc-list | grep -iE 'Inter|Fira Code|Noto Serif' | head -3 || true
+          for pk in fonts-montserrat fonts-ebgaramond fonts-inter fonts-firacode fonts-noto-core; do sudo apt-get install -y -qq $pk > /dev/null || echo "no $pk"; done; fc-list | grep -iE 'Inter|Fira Code|Noto Serif' | head -3 || true
           mkdir -p ~/.local/share/fonts && cp fonts/*.ttf ~/.local/share/fonts/ && fc-cache -f > /dev/null
       - name: Thomas frames
         run: bash scripts/ep004_clip_frames.sh
@@ -55,7 +55,7 @@ jobs:
     if: inputs.stills == ''
     runs-on: ubuntu-22.04
     steps:
-      - run: gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --title "$TAG" --notes "Montaj automat ep. 003 (scale ${{ inputs.scale }}, run ${{ github.run_number }})" --prerelease
+      - run: gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --title "$TAG" --notes "Montaj automat ep. 004 (scale ${{ inputs.scale }}, run ${{ github.run_number }})" --prerelease
         env:
           GH_TOKEN: ${{ github.token }}
 
@@ -74,7 +74,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq python3-cairo python3-numpy python3-pil ffmpeg fonts-lato fonts-ibm-plex fonts-jetbrains-mono fontconfig > /dev/null
-          for pk in fonts-inter fonts-firacode fonts-noto-core; do sudo apt-get install -y -qq $pk > /dev/null || echo "no $pk"; done; fc-list | grep -iE 'Inter|Fira Code|Noto Serif' | head -3 || true
+          for pk in fonts-montserrat fonts-ebgaramond fonts-inter fonts-firacode fonts-noto-core; do sudo apt-get install -y -qq $pk > /dev/null || echo "no $pk"; done; fc-list | grep -iE 'Inter|Fira Code|Noto Serif' | head -3 || true
           mkdir -p ~/.local/share/fonts && cp fonts/*.ttf ~/.local/share/fonts/ && fc-cache -f > /dev/null
       - name: Thomas frames
         run: bash scripts/ep004_clip_frames.sh

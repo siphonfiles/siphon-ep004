@@ -63,6 +63,20 @@ elif THEME == "ep003":
     HEAD = "Inter"
     MONO = "Fira Code"
     SERIF = "Noto Serif"
+# SIPHON_THEME=ep004 (Ledger implant, "under the inspection lamp"): very dark violet-ink background,
+# ultraviolet accent (inspection light / X-ray), red only for the theft; slow cellular signal rings from a
+# point in the lower left, fine circuit traces, and an X-ray scan band drifting across.
+# Montserrat / IBM Plex Mono / EB Garamond (OFL, apt: fonts-montserrat, fonts-ibm-plex, fonts-ebgaramond).
+elif THEME == "ep004":
+    BG = (0x13 / 255, 0x0F / 255, 0x1A / 255)
+    AMBER = (0x9D / 255, 0x7B / 255, 0xFF / 255)
+    INK = (0xEE / 255, 0xEB / 255, 0xF6 / 255)
+    GREY = (0x8C / 255, 0x86 / 255, 0xA0 / 255)
+    DIM = (0x25 / 255, 0x1F / 255, 0x33 / 255)
+    RED = (0xFF / 255, 0x4F / 255, 0x5E / 255)
+    HEAD = os.environ.get("SIPHON_HEAD", "Montserrat")
+    MONO = os.environ.get("SIPHON_MONO", "IBM Plex Mono")
+    SERIF = os.environ.get("SIPHON_SERIF", "EB Garamond")
 
 
 # --- easing ------------------------------------------------------------------
@@ -309,6 +323,54 @@ def backdrop_vault(ctx, t):
     ctx.restore()
 
 
+_SIGNAL = {}
+
+
+def backdrop_signal(ctx, t):
+    """ep004 backdrop: fine circuit traces (static), cellular signal rings expanding slowly from a point
+    in the lower left (the implant calling out), and a soft X-ray scan band crossing left to right."""
+    import random as _r
+    if "traces" not in _SIGNAL:
+        s = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H)
+        c = cairo.Context(s)
+        rnd = _r.Random(4)
+        c.set_line_width(1)
+        for _ in range(46):
+            x, y = rnd.randrange(0, W, 40), rnd.randrange(0, H, 40)
+            c.set_source_rgba(AMBER[0], AMBER[1], AMBER[2], rnd.uniform(0.025, 0.055))
+            c.move_to(x + 0.5, y + 0.5)
+            for _ in range(rnd.randint(2, 4)):
+                if rnd.random() < 0.5:
+                    x += rnd.choice((-1, 1)) * rnd.randrange(80, 360, 40)
+                else:
+                    y += rnd.choice((-1, 1)) * rnd.randrange(40, 200, 40)
+                c.line_to(x + 0.5, y + 0.5)
+            c.stroke()
+            c.arc(x + 0.5, y + 0.5, 3, 0, 2 * math.pi)
+            c.stroke()
+        _SIGNAL["traces"] = s
+    ctx.save()
+    ctx.set_source_surface(_SIGNAL["traces"], 0, 0)
+    ctx.paint()
+    cx, cy = 150, H - 110
+    ctx.set_line_width(1.4)
+    for k in range(5):
+        ph = (t / 7.0 + k / 5.0) % 1.0
+        r = 40 + ph * 900
+        ctx.set_source_rgba(AMBER[0], AMBER[1], AMBER[2], 0.11 * (1 - ph) ** 1.6)
+        ctx.arc(cx, cy, r, -math.pi * 0.62, math.pi * 0.12)
+        ctx.stroke()
+    x = (t / 11.0 % 1.0) * (W + 360) - 180
+    g = cairo.LinearGradient(x - 180, 0, x + 180, 0)
+    g.add_color_stop_rgba(0, AMBER[0], AMBER[1], AMBER[2], 0)
+    g.add_color_stop_rgba(0.5, AMBER[0], AMBER[1], AMBER[2], 0.04)
+    g.add_color_stop_rgba(1, AMBER[0], AMBER[1], AMBER[2], 0)
+    ctx.set_source(g)
+    ctx.rectangle(x - 180, 0, 360, H)
+    ctx.fill()
+    ctx.restore()
+
+
 # --- rendering ---------------------------------------------------------------
 _TIMELINE = None
 
@@ -325,6 +387,8 @@ def _render_frame(i):
         backdrop(ctx, t)
     elif THEME == "ep003":
         backdrop_vault(ctx, t)
+    elif THEME == "ep004":
+        backdrop_signal(ctx, t)
     for start, end, fn, params in _TIMELINE:
         if start <= t < end:
             ctx.save()
