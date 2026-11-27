@@ -6,6 +6,7 @@ Regula: cel mult 40 min de cotă pe zi (plănuit ≤ 38), start la **≥ 25 h** 
 |---|---|---|---|---|---|
 | 2026-11-25 03:31 | (ultima rulare a ep. 003, referință) | — | — | — | 2026-11-26 04:31 |
 | 2026-11-26 04:32 | ziua 1: portrete ținută (3, 18 s) · ilustrații set1 (33, 466 s) · birou Qwen (99 s) · LongCat i1+i2 (04:52–05:04, ambele bune) | 583 + 2 clipuri | ~13 + ~21,4 = ~34 | 0 (desk: doar copierea a căzut, fără cotă în plus) | 2026-11-27 05:32 |
+| 2026-11-27 05:34 | ziua 2: LongCat i3, a9, a10, b7 (4 clipuri, zi doar cu clipuri) | | ~42,8 (≈ $0,30 din credite) | | 2026-11-28 06:34 |
 
 ## Plan ziua 1 (start cel mai devreme 26 nov 2026, 04:31; programat 04:32)
 | pas | estimare cotă |
