@@ -367,7 +367,7 @@ def build(tl):
        glows=[dict(kind="pulse", x=1010, y=600, r=160, color=REDL, min=0.02, max=0.08, hz=0.3)])
     add(s("f6"), s("f7"), E.address_card, match=True, source="[S4][S14]")
     add(s("f7"), s("f8"), E.status_board, title="LEDGER · 19 NOVEMBER 2026",
-        rows=[("THE DUBAI AND BERLIN CASES", "the same incident"), ("WHERE", "outside Southeast Asia"),
+        rows=[("TAMPERED DEVICES", "outside Southeast Asia"), ("LEDGER SAYS", "the same incident"),
               ("MORE DEVICES", "may be found")], source="[S13]")
     c = card(e("f8"))
     IL(s("f8"), c, "f8_xray", "in", kicker="VIERZON, FRANCE", line="Ledger offers owners an X-ray inspection.",

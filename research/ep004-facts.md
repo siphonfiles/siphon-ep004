@@ -64,3 +64,6 @@ Stadiu: **documentare verificată, 25 nov 2026, 19:30**. Marcaj: **[P]** = citit
 | S14 | Bitquery, „The CryptoBilis thief came back” (18–19 nov) | on-chain | **[P]** |
 | S15 | Ledger Donjon LSB-013 (9 iul 2020) | firma | **[P]** |
 | S19 | MediaMarkt Saturn a oprit vânzările Ledger (13 oct), anunțat de Ledger pe X | firma | confirmat concordant (crypto.news, CryptoTicker, The Block) |
+
+
+**URL-uri verificate (28 nov 2026):** S13 = https://support.ledger.com/article/Update-on-the-Hardware-Implant-Incident-Investigation · S14 = https://www.bitquery.io/investigations/ledger-hack-dubai-berlin · S15 = https://donjon.ledger.com/lsb/013/ · S7 = https://grandideastudio.com/portfolio/security/ledger-hardware-implant/. Fără adresă exactă încă: S2, S5, S6, S19 (postări X / LinkedIn). Nuanță S13: Berlin = confirmat; Dubai = două rapoarte în investigare la 19 nov → cartonul f7 și descrierea reformulate.

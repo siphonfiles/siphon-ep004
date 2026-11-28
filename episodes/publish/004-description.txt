@@ -2,7 +2,7 @@ A sealed box. Plastic tight, seal intact. Inside, a genuine Ledger hardware wall
 
 This is the story of an extra board hidden where a strip of padding should be, the reseller that changed hands in March, the thief who changed the locks before stealing, and the one address that showed up again five weeks later.
 
-STATUS AS OF LATE NOVEMBER 2026: no public arrest and no charges that we could find. Ledger has not confirmed how many devices were tampered with or how much was lost in total; the figures in this video are Bitquery's on-chain count. Ledger says every loss it has confirmed in the October incident involved devices sold through the reseller CryptoBilis, and that the November cases (devices bought in Dubai and Berlin) are part of the same incident. The former founders of CryptoBilis say they sold the company in March 2026 and deny any involvement. Nobody has publicly said who fitted the implants. Details may have changed after publication.
+STATUS AS OF LATE NOVEMBER 2026: no public arrest and no charges that we could find. Ledger has not confirmed how many devices were tampered with or how much was lost in total; the figures in this video are Bitquery's on-chain count. Ledger says every loss it has confirmed in the October incident involved devices sold through the reseller CryptoBilis, and that tampered devices found outside Southeast Asia are part of the same incident (confirmed in Berlin; reports from Dubai were still under investigation in its 19 November update). The former founders of CryptoBilis say they sold the company in March 2026 and deny any involvement. Nobody has publicly said who fitted the implants. Details may have changed after publication.
 
 Narrated by Thomas Archer, the AI narrator of Siphon Files. His face and voice are synthetic. Illustrations are AI-generated; on-screen device screens and recovery words are illustrative, not real. Quotes from real people and companies appear as text only.
 
@@ -29,8 +29,8 @@ SOURCES (every claim in the video is tagged [S#])
 [S5] Mark Karpeles / Tibane Labs, posts of 16 Sep and 9 Oct 2026 and the Tibane Labs field report on implanted Nano X units
 [S6] Arravind Prabu (former CryptoBilis co-founder), LinkedIn statement, 10 Oct 2026
 [S7] Joe Grand, "Reverse Engineering a Ledger Nano X Hardware Implant": https://grandideastudio.com/portfolio/security/ledger-hardware-implant/
-[S13] Ledger Support, "Ledger's Response" (15 Oct 2026) and "Update on the Hardware Implant Incident Investigation" (19 Nov 2026)
-[S14] Bitquery, follow-up on the 14-16 Nov drains (the same control address)
+[S13] Ledger Support, "Update on the Hardware Implant Incident Investigation" (19 Nov 2026): https://support.ledger.com/article/Update-on-the-Hardware-Implant-Incident-Investigation
+[S14] Bitquery, "The CryptoBilis thief came back", 18 Nov 2026: https://www.bitquery.io/investigations/ledger-hack-dubai-berlin
 [S15] Ledger Donjon, Security Bulletin 013, 9 July 2020: https://donjon.ledger.com/lsb/013/
 [S19] MediaMarkt Saturn pause of Ledger sales, announced by Ledger on X, 13 Oct 2026
 
