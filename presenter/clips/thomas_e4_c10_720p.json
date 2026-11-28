@@ -1,0 +1,15 @@
+{
+  "name": "thomas_e4_c10_720p",
+  "image": "presenter/reference/thomas_ref_ep004_1920x1080.png",
+  "audio": "presenter/clips/inputs/ep004/thomas_e4_c10.wav",
+  "line": "Who owned the shop by October? Nobody has said publicly.",
+  "prompt": "A British man in his early forties with short dark brown hair and light stubble, wearing a plain dark burgundy crew-neck sweater, sits at a wooden desk in a dim investigation office and speaks calmly and clearly to the camera. His hands rest still and relaxed on the manila folder on the desk. Subtle natural head movements, steady eye contact, occasional natural blinks. Static locked-off camera, soft frontal light, realistic skin texture.",
+  "resolution": "720p",
+  "seed": 42,
+  "vocal_mode": "Clean speech (fast)",
+  "acceleration": "DBCache faster",
+  "note": "ep. 004, burgundy sweater; 720p only (rule 18d)",
+  "wall_seconds": 318.2,
+  "space": "victor/LongCat-Video-Avatar-1.6",
+  "output": "thomas_e4_c10_720p.mp4"
+}
