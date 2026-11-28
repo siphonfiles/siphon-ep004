@@ -54,20 +54,27 @@ def save(im, name):
 
 
 def main():
-    # A: the sealed box (first image of the episode)
-    im = base("t1_sealed_box_v2", gain=1.55, sat=1.15)
-    im = side_shade(im, "right", 0.75, 0.6)
-    text_block(im, W - 60, 150, [("SEALED.", 190, WHITE, 0), ("ALREADY", 150, RED, 210), ("ROBBED.", 150, RED, 370)], "ra")
+    # A: the sealed box (first image of the episode), set smaller on the left so the words stay clear of it
+    full = base("t1_sealed_box_v2", gain=1.55, sat=1.15)
+    bg = full.filter(ImageFilter.GaussianBlur(40))
+    bg = Image.blend(bg, Image.new("RGB", (W, H), (10, 6, 20)), 0.45)
+    small = full.resize((1000, 562), Image.LANCZOS)
+    m = Image.new("L", (1000, 562), 0)
+    ImageDraw.Draw(m).rectangle((60, 50, 940, 512), fill=255)
+    m = m.filter(ImageFilter.GaussianBlur(45))
+    bg.paste(small, (-130, 110), m)
+    im = side_shade(bg, "right", 0.55, 0.5)
+    text_block(im, W - 50, 120, [("SEALED.", 190, WHITE, 0), ("ALREADY", 150, RED, 215), ("ROBBED.", 150, RED, 375)], "ra")
     save(im, "ep004_thumb_A_sealed_already_robbed.jpg")
     # B: the teardown, the number from the first 30 seconds
-    im = base("b9_teardown", crop=(0, 140, 1548, 1011), gain=1.45, sat=1.1)
+    im = base("b9_teardown", crop=(0, 190, 1400, 978), gain=1.45, sat=1.1)
     im = side_shade(im, "left", 0.85, 0.55)
-    text_block(im, 60, 120, [("$102M", 250, WHITE, 0), ("THE CHIP", 120, UV, 290), ("WAS FINE.", 120, UV, 420)])
+    text_block(im, 60, 120, [("$102M", 215, WHITE, 0), ("THE CHIP", 110, UV, 255), ("WAS FINE.", 110, UV, 375)])
     save(im, "ep004_thumb_B_102m_chip_was_fine.jpg")
     # C: the X-ray
     im = base("f8_xray", gain=1.1, sat=1.15)
     im = side_shade(im, "left", 0.9, 0.62)
-    text_block(im, 60, 170, [("IT READ", 190, WHITE, 0), ("THE SCREEN.", 150, UV, 220)])
+    text_block(im, 60, 170, [("IT READ", 190, WHITE, 0), ("THE SCREEN.", 128, UV, 222)])
     save(im, "ep004_thumb_C_it_read_the_screen.jpg")
 
 
