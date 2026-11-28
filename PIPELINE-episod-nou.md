@@ -20,7 +20,7 @@ Procesul e **recurent**. De fiecare dată când un episod e gata și proprietaru
 | Episod | Publicare |
 |---|---|
 | ep. 001 | publicat pe 23 nov |
-| ep. 002 | 30 nov |
+| ep. 002 | publicat pe 28 nov 2026, ~11:24 (mai devreme decât programarea din 30 nov) |
 | ep. 003 | programat pe 7 dec |
 | ep. 004 | **14 dec**; 4K și upload cel târziu pe 13 dec |
 
@@ -71,7 +71,9 @@ Când propui ceva, dă o recomandare clară și întreabă o singură dată.
 
 ## 1. Research de subiect (proprietarul la Mac)
 
-Scopul e un caz cu **cerere reală** și **ofertă slabă**. Pot fi cazuri noi (ultimele 1–6 luni) sau mai vechi, pe care nimeni nu le-a acoperit bine.
+Scopul e un caz cu **cerere dovedită**. Pot fi cazuri noi (ultimele 1–6 luni) sau mai vechi, dacă lumea încă le caută.
+
+**Pragul de cerere (obligatoriu, 28 nov 2026, de la ep. 006):** un subiect intră în finală doar dacă pe YouTube există deja **cel puțin 2–3 videouri dedicate cazului, de la canale diferite, cu peste 200.000 de vizualizări fiecare**. Dacă nu există, subiectul cade, oricât de bună e povestea. **Concurența mică nu e argument:** dacă cel mai văzut video pe un caz are câteva mii de vizualizări, asta înseamnă că nu-l caută nimeni, nu că e loc liber (greșeala de la ep. 001 Drift și ep. 002 Bitget: ~15–20 de vizualizări în prima săptămână, aproape toate din căutare). Cifrele găsite se trec în `research/epNNN-topic.md`.
 
 1. **Lista de candidați (8–12).** Surse:
    - DefiLlama (hacks);
@@ -87,7 +89,7 @@ Scopul e un caz cu **cerere reală** și **ofertă slabă**. Pot fi cazuri noi (
    | Semnal | Cum îl citești |
    |---|---|
    | Cerere | vizualizări mari la video-uri mici sau vechi; comentarii cu întrebări rămase fără răspuns; căutări sugerate (autocomplete) |
-   | Ofertă slabă | maximum câteva mii de vizualizări pe cel mai bun video dedicat cazului; nimeni nu a făcut investigația completă |
+   | Unghi liber | cazul are videouri mari (vezi pragul de cerere), dar nimeni nu a făcut unghiul nostru: omul din centru, mecanismul explicat vizual, ce s-a aflat de atunci |
    | Concurență | canalele de urmărit: Coin Bureau, Gloam, fern, Lume, Crumb, DW, Patrick Boyle |
 
    Notează unghiurile pe care concurența le-a folosit deja, ca să le eviți.
@@ -423,3 +425,7 @@ Modelul e `siphon-ep003` › `episodes/publish/003-youtube.md` + `003-descriptio
 ## Verificare și corectură automată după fiecare montaj (Proprietarul, 27 nov 2026)
 
 După **fiecare** montaj și randare, chatul de episod verifică singur imaginea **scenă cu scenă** (cadre din fiecare scenă, planșe de contact, apoi randarea însăși) față de cerințele proprietarului din `CLAUDE.md` secțiunea 8: nimic repetat, cartoane ancorate pe cuvinte, lumini care pâlpâie, fără praf în exterior, ceață/ninsoare vizibile, niciun ecran gol, fără pete de culoare rătăcite, Thomas doar în video, fără flash-uri sub 1 s, text lizibil și netăiat, surse pe ecran. Ce nu respectă cerințele se repară și se randează din nou, **în buclă, până când toate sunt îndeplinite**. Totul automat: verificările, corecturile și ajustările **nu cer aprobarea proprietarului**. Proprietarul primește previzualizarea abia după ce bucla a trecut, cu lista scurtă a ce s-a corectat. (Rămân cu acord explicit doar: randarea 4K și orice cheltuială peste regulile de cotă.)
+
+
+## Regulă de script: „până la data la care a fost făcut acest video” (Proprietarul, 28 nov 2026)
+Unde un fapt e încă în mișcare (anchete fără concluzie, procese, identități nedovedite, sume neconfirmate, cine deține ce), replica o spune explicit: „As of the date this video was made, …” / „As we make this video, …”. Se aplică în finalul „ce nu știm”, la orice persoană numită care neagă și la orice cifră dată de o singură sursă. Descrierea păstrează paragraful STATUS cu luna. În fișa de fapte, aceste locuri se marchează cu ⏱.
