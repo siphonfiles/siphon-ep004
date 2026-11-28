@@ -35,3 +35,5 @@ Refaceri ilustrații t1_sealed_box, a7_empty_wallets, d11_drain (~1 min) + clipu
 **27 nov:** b7 a căzut pe limita de 240 s a Space-ului public (al 4-lea clip la rând; primele trei au mers normal). Se reface în ziua 5, împreună cu k5, k6. Zilele 3–4 rămân cu 4 clipuri; dacă al 4-lea cade din nou, revin la 3 clipuri/zi.
 
 **27 nov, 08:50 (captura proprietarului):** ZeroGPU **40,0/40 min, „Over usage”**; credite $11,03 → **$11,02**; „Current period usage” $40,97 → $40,98. Deci ziua 2 a costat **$0,01**, iar trecerea pe credite funcționează. b7 a fost oprit la ~0,1 min după pragul de 40. Cauza rămâne nedovedită: limita de 240 s a Space-ului (clip mai lent) sau oprire la trecerea pragului. Test fără cost: al 4-lea clip din ziua 3; dacă pică la fel → 3 clipuri/zi.
+
+**28 nov, 06:36 (ZIUA 3, start real):** longcat-batch cu b15, c7, c10, d9 (4 clipuri 720p; al 4-lea din credite, ≤ $2/zi). Ziua 4 cel mai devreme 29 nov, 07:36.
