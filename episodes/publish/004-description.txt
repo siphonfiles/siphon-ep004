@@ -1,0 +1,37 @@
+A sealed box. Plastic tight, seal intact. Inside, a genuine Ledger hardware wallet with the real secure chip and the real software. On 9 October 2026, hundreds of wallets set up on devices like it were emptied within about an hour. One on-chain count puts the total near $102 million from 335 wallets on six networks. Nobody broke the chip. Something behind the screen read the recovery words and sent them out over the mobile network.
+
+This is the story of an extra board hidden where a strip of padding should be, the reseller that changed hands in March, the thief who changed the locks before stealing, and the one address that showed up again five weeks later.
+
+STATUS AS OF LATE NOVEMBER 2026: no public arrest and no charges that we could find. Ledger has not confirmed how many devices were tampered with or how much was lost in total; the figures in this video are Bitquery's on-chain count. Ledger says every loss it has confirmed in the October incident involved devices sold through the reseller CryptoBilis, and that the November cases (devices bought in Dubai and Berlin) are part of the same incident. The former founders of CryptoBilis say they sold the company in March 2026 and deny any involvement. Nobody has publicly said who fitted the implants. Details may have changed after publication.
+
+Narrated by Thomas Archer, the AI narrator of Siphon Files. His face and voice are synthetic. Illustrations are AI-generated; on-screen device screens and recovery words are illustrative, not real. Quotes from real people and companies appear as text only.
+
+Not financial or security advice. If you own a hardware wallet you are worried about, follow the maker's official support channel and the Singapore Police advisory linked below. Never type or share your recovery phrase.
+
+CHAPTERS
+0:00 The sealed box
+0:39 Who counted
+0:52 The man who did everything right
+1:47 Two chips, one screen
+3:21 The warning
+4:21 The preparation
+5:05 T-minus: 05:07 UTC
+6:12 The chase
+7:36 The return
+8:28 If you own one
+8:58 What we don't know
+9:27 The box, again
+
+SOURCES (every claim in the video is tagged [S#])
+[S1] Singapore Police Force, advisory on tampered cryptocurrency hardware wallets, 28 Oct 2026: https://www.police.gov.sg/media-hub/news/2026/10/20261028_police_advisory_on_tampered_cryptocurrency_hardware_wallets
+[S2] Ledger and Ledger Support on X, 9-13 Oct 2026 (implant confirmed in one victim's device; Ledger Donjon's description of the LTE implant)
+[S4] Bitquery, on-chain investigation of the 9 Oct drains: https://bitquery.io/investigations/ledger-cryptobilis-hack
+[S5] Mark Karpeles / Tibane Labs, posts of 16 Sep and 9 Oct 2026 and the Tibane Labs field report on implanted Nano X units
+[S6] Arravind Prabu (former CryptoBilis co-founder), LinkedIn statement, 10 Oct 2026
+[S7] Joe Grand, "Reverse Engineering a Ledger Nano X Hardware Implant": https://grandideastudio.com/portfolio/security/ledger-hardware-implant/
+[S13] Ledger Support, "Ledger's Response" (15 Oct 2026) and "Update on the Hardware Implant Incident Investigation" (19 Nov 2026)
+[S14] Bitquery, follow-up on the 14-16 Nov drains (the same control address)
+[S15] Ledger Donjon, Security Bulletin 013, 9 July 2020: https://donjon.ledger.com/lsb/013/
+[S19] MediaMarkt Saturn pause of Ledger sales, announced by Ledger on X, 13 Oct 2026
+
+#Ledger #CryptoHack #HardwareWallet

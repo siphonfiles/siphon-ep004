@@ -1,0 +1,620 @@
+1
+00:00:01,200 --> 00:00:02,710
+This box has never been opened.
+
+2
+00:00:05,610 --> 00:00:07,877
+The plastic is tight. The seal is intact.
+
+3
+00:00:08,777 --> 00:00:12,930
+Inside is a genuine hardware wallet. The real chip. The real software.
+
+4
+00:00:13,830 --> 00:00:16,805
+On 9 October, 335 wallets were emptied.
+
+5
+00:00:16,845 --> 00:00:21,330
+Ledger tied the confirmed losses to devices like this one.
+
+6
+00:00:23,830 --> 00:00:27,399
+About $102 million, by one on-chain count.
+
+7
+00:00:28,299 --> 00:00:31,278
+Nobody broke the chip. Nobody cracked the code.
+
+8
+00:00:32,179 --> 00:00:33,408
+Someone just read the screen.
+
+9
+00:00:39,657 --> 00:00:43,027
+I'm Thomas Archer, the AI narrator of Siphon Files.
+
+10
+00:00:43,527 --> 00:00:45,945
+Every claim in this video comes with a source.
+
+11
+00:00:46,545 --> 00:00:48,402
+Ledger hasn't confirmed the totals.
+
+12
+00:00:48,442 --> 00:00:50,068
+So we'll tell you who counted.
+
+13
+00:00:53,168 --> 00:00:57,488
+On 29 September, one Bitcoin address received 80 coins.
+
+14
+00:00:58,188 --> 00:01:00,977
+At the time, that was roughly $5 million.
+
+15
+00:01:01,678 --> 00:01:04,219
+The coins went onto a Ledger. A hardware wallet.
+
+16
+00:01:04,259 --> 00:01:07,431
+A small device that keeps your keys away from the internet.
+
+17
+00:01:08,031 --> 00:01:09,842
+It's the advice everyone gets.
+
+18
+00:01:09,882 --> 00:01:13,358
+Don't leave your coins on an exchange. Buy a cold wallet.
+
+19
+00:01:13,398 --> 00:01:16,113
+Write the 24 words on paper. Keep them safe.
+
+20
+00:01:16,713 --> 00:01:18,642
+The device came from CryptoBilis.
+
+21
+00:01:18,682 --> 00:01:20,550
+Not a stranger on a marketplace.
+
+22
+00:01:20,590 --> 00:01:25,482
+An authorised Ledger reseller, listed for Malaysia, Indonesia and the Philippines.
+
+23
+00:01:26,282 --> 00:01:28,907
+But ten days later, the 80 coins were gone.
+
+24
+00:01:29,707 --> 00:01:31,971
+They left in a single Bitcoin block.
+
+25
+00:01:32,011 --> 00:01:34,892
+Together with the coins of 110 other wallets.
+
+26
+00:01:35,493 --> 00:01:39,702
+No phishing link. No fake support call. No malware on a laptop.
+
+27
+00:01:40,602 --> 00:01:43,319
+So how do you rob a wallet that never goes online?
+
+28
+00:01:43,919 --> 00:01:46,289
+To answer that, we have to open the box.
+
+29
+00:01:50,289 --> 00:01:51,765
+A Ledger has two brains.
+
+30
+00:01:52,365 --> 00:01:53,755
+The first is a secure chip.
+
+31
+00:01:53,795 --> 00:01:56,814
+It holds your keys, and it's built never to let them out.
+
+32
+00:01:57,414 --> 00:01:59,301
+The second is an ordinary chip.
+
+33
+00:01:59,341 --> 00:02:02,511
+It runs the buttons, the Bluetooth. And the screen.
+
+34
+00:02:03,111 --> 00:02:05,783
+In 2020, Ledger wrote down a rule for the Nano X.
+
+35
+00:02:05,823 --> 00:02:10,195
+That second chip could be fully compromised, and the funds would still be safe.
+
+36
+00:02:12,895 --> 00:02:16,473
+Because the secret never leaves the secure chip. Except once.
+
+37
+00:02:17,172 --> 00:02:21,588
+When you set the device up, it shows you your recovery phrase. 24 words.
+
+38
+00:02:21,628 --> 00:02:24,166
+On the screen. So you can copy them down.
+
+39
+00:02:24,766 --> 00:02:27,741
+For a few minutes, your most valuable secret is on display.
+
+40
+00:02:28,540 --> 00:02:29,895
+Now look behind that screen.
+
+41
+00:02:30,495 --> 00:02:33,972
+Researchers who opened tampered units found an extra board,
+
+42
+00:02:34,012 --> 00:02:38,681
+tucked where a strip of padding should be. A microcontroller. A cellular modem.
+
+43
+00:02:38,721 --> 00:02:40,152
+An antenna. And an eSIM.
+
+44
+00:02:42,452 --> 00:02:46,127
+To make room, the original battery had been swapped for a smaller one.
+
+45
+00:02:46,728 --> 00:02:50,977
+Ledger's own security team, the Donjon, described what the implant does.
+
+46
+00:02:51,477 --> 00:02:53,685
+It reads the data going to the screen.
+
+47
+00:02:53,725 --> 00:02:56,583
+When it sees the recovery words, it decodes them.
+
+48
+00:02:56,623 --> 00:02:59,699
+Then it sends them out over LTE. The mobile network.
+
+49
+00:03:00,398 --> 00:03:02,010
+It doesn't touch the secure chip.
+
+50
+00:03:02,050 --> 00:03:04,002
+It doesn't change a single transaction.
+
+51
+00:03:04,603 --> 00:03:07,071
+And it doesn't need your laptop or your phone.
+
+52
+00:03:07,111 --> 00:03:08,747
+It brought its own connection.
+
+53
+00:03:09,446 --> 00:03:12,782
+No virus to catch. No link to click. Just a box.
+
+54
+00:03:13,682 --> 00:03:16,711
+Ledger's genuineness check is built to test the secure chip.
+
+55
+00:03:16,751 --> 00:03:19,565
+And in these devices, the secure chip was the real one.
+
+56
+00:03:23,566 --> 00:03:24,982
+But this board wasn't new.
+
+57
+00:03:25,582 --> 00:03:29,938
+According to Tibane Labs, a research group that documented the implant,
+
+58
+00:03:29,978 --> 00:03:35,117
+the first public warning about a tampered Nano X appeared on Reddit in August 2025.
+
+59
+00:03:35,717 --> 00:03:39,292
+This year, the hardware hacker Joe Grand took one apart on stage.
+
+60
+00:03:39,332 --> 00:03:43,170
+He showed the smaller battery, and the board that shouldn't be there.
+
+61
+00:03:43,771 --> 00:03:47,675
+On 16 September, Mark Karpelès posted photos of a newer version.
+
+62
+00:03:47,715 --> 00:03:49,810
+He called it "quite an evolution".
+
+63
+00:03:50,410 --> 00:03:55,192
+Those research units came from other channels. Online marketplaces in Japan.
+
+64
+00:03:55,232 --> 00:03:56,564
+Not from CryptoBilis.
+
+65
+00:03:57,164 --> 00:04:01,557
+So the implant was public. What nobody had yet shown was a wave of real losses.
+
+66
+00:04:02,357 --> 00:04:03,611
+That was about to change.
+
+67
+00:04:04,411 --> 00:04:07,207
+Back in March, CryptoBilis had changed hands.
+
+68
+00:04:07,807 --> 00:04:10,894
+Its founders later said the company was sold to a new team,
+
+69
+00:04:10,934 --> 00:04:14,656
+and that they handed over all operations. They haven't named the buyer.
+
+70
+00:04:14,696 --> 00:04:16,074
+They deny any involvement.
+
+71
+00:04:16,873 --> 00:04:20,192
+Who owned the shop by October? Nobody has said publicly.
+
+72
+00:04:24,192 --> 00:04:25,882
+So the thief started preparing.
+
+73
+00:04:25,922 --> 00:04:27,986
+And the blockchain kept the receipts.
+
+74
+00:04:28,586 --> 00:04:33,605
+On 24 September, a withdrawal from the exchange Bybit landed in a wallet on the
+
+75
+00:04:33,645 --> 00:04:34,478
+Tron network.
+
+76
+00:04:35,078 --> 00:04:37,221
+That money later paid the attack's fees.
+
+77
+00:04:37,821 --> 00:04:43,679
+From the 25th, the thief ran tests. 21 small loops on Tron. 20 on Ethereum.
+
+78
+00:04:45,579 --> 00:04:47,119
+Remember one thing from this.
+
+79
+00:04:47,159 --> 00:04:50,429
+A single Tron address, acting as the thief's control wallet.
+
+80
+00:04:53,129 --> 00:04:55,835
+Meanwhile, the victims kept loading their wallets.
+
+81
+00:04:55,875 --> 00:05:00,393
+Bitquery found that about 6 in 10 drained wallets were first funded within the last
+
+82
+00:05:00,433 --> 00:05:01,033
+90 days.
+
+83
+00:05:01,472 --> 00:05:04,336
+Someone had the keys in advance. And waited.
+
+84
+00:05:11,336 --> 00:05:18,465
+At 04:59 UTC, 30 Tron wallets got a new key added. Each paid a 100 TRX fee.
+
+85
+00:05:19,265 --> 00:05:22,069
+The thief didn't steal yet. The thief changed the locks.
+
+86
+00:05:25,269 --> 00:05:31,006
+At 05:07. 25 Tron wallets sign the same approval, within 3 seconds.
+
+87
+00:05:31,607 --> 00:05:34,576
+$29 million leaves in 6 seconds.
+
+88
+00:05:35,276 --> 00:05:38,817
+Then BNB Chain. Polygon. Ethereum. Solana.
+
+89
+00:05:39,417 --> 00:05:45,857
+At 05:54, one Bitcoin block. 111 wallets, emptied together. The 80 coins were in it.
+
+90
+00:05:46,557 --> 00:05:49,500
+Another wallet, first funded on 15 September,
+
+91
+00:05:49,540 --> 00:05:52,854
+lost $7 million in Tether in a single transaction.
+
+92
+00:05:53,453 --> 00:05:57,284
+One Tron wallet had taken in $33 million since October began.
+
+93
+00:05:57,324 --> 00:05:58,974
+It looked like a business.
+
+94
+00:05:59,575 --> 00:06:05,738
+By Bitquery's count, the full tally reached $102 million, from 335 wallets,
+
+95
+00:06:05,778 --> 00:06:06,936
+on 6 networks.
+
+96
+00:06:07,935 --> 00:06:10,474
+Most of it was gone before anyone raised the alarm.
+
+97
+00:06:13,575 --> 00:06:15,265
+But stablecoins can be frozen.
+
+98
+00:06:15,305 --> 00:06:17,207
+And by noon, Tether was freezing.
+
+99
+00:06:17,807 --> 00:06:20,238
+The first freeze came at 12:09 UTC.
+
+100
+00:06:20,278 --> 00:06:23,456
+7 hours after the first wallets were drained.
+
+101
+00:06:25,556 --> 00:06:27,487
+About $10 million stayed locked.
+
+102
+00:06:29,387 --> 00:06:31,858
+The thief had planned for that, too.
+
+103
+00:06:31,898 --> 00:06:37,128
+$23.7 million in Tether was swapped into USDD, a token Tether can't freeze.
+
+104
+00:06:37,828 --> 00:06:42,110
+The rest moved through THORChain, Chainflip and other swap services.
+
+105
+00:06:42,150 --> 00:06:44,248
+Into Tornado Cash. Through Zcash.
+
+106
+00:06:45,048 --> 00:06:49,477
+Back on the 9th itself, Mark Karpelès opened a Nano X sent to him from Malaysia.
+
+107
+00:06:49,517 --> 00:06:51,528
+It arrived still in its shrink-wrap.
+
+108
+00:06:52,128 --> 00:06:55,179
+Behind the screen, where the padding should be, he found the board.
+
+109
+00:06:56,080 --> 00:07:00,012
+On 10 October, Ledger confirmed an implant in one victim's device.
+
+110
+00:07:00,052 --> 00:07:02,420
+On the 13th, it described the LTE board.
+
+111
+00:07:02,460 --> 00:07:06,733
+It said every confirmed loss involved devices sold through CryptoBilis.
+
+112
+00:07:07,333 --> 00:07:10,772
+Two days later, it blamed "a sophisticated criminal group",
+
+113
+00:07:10,812 --> 00:07:14,605
+and tightened the rules for its resellers. No devices on display.
+
+114
+00:07:14,645 --> 00:07:17,358
+Handed over at purchase. No resale of returns.
+
+115
+00:07:17,958 --> 00:07:22,766
+Then Singapore police reported at least 2 cases since 10 September.
+
+116
+00:07:22,806 --> 00:07:26,496
+About S$3.5 million. Devices bought in local shops.
+
+117
+00:07:27,096 --> 00:07:31,303
+In Europe, the electronics chain MediaMarkt paused its Ledger sales.
+
+118
+00:07:32,103 --> 00:07:34,885
+So it wasn't just one reseller, in one country.
+
+119
+00:07:38,884 --> 00:07:45,565
+Then, on 14 November, at 19:43 UTC, 4 Tron wallets emptied.
+
+120
+00:07:46,165 --> 00:07:50,238
+10 minutes later, 9 Bitcoin wallets, in one block. Then more.
+
+121
+00:07:50,838 --> 00:07:54,088
+This time, the devices didn't come from Southeast Asia.
+
+122
+00:07:54,128 --> 00:07:58,494
+A Ledger Flex and a Ledger Stax bought in Dubai. A Flex bought in Berlin.
+
+123
+00:07:59,094 --> 00:08:02,469
+$1.68 million, from 16 wallets.
+
+124
+00:08:04,368 --> 00:08:08,520
+And in the same block as the drain, one Tron address paid the network fees.
+
+125
+00:08:09,320 --> 00:08:12,318
+According to Bitquery, it was the same control address.
+
+126
+00:08:13,218 --> 00:08:16,824
+On 19 November, Ledger wrote that it is the same incident.
+
+127
+00:08:16,864 --> 00:08:20,825
+Tampered devices outside Southeast Asia. And more may be found.
+
+128
+00:08:21,525 --> 00:08:26,233
+Ledger now offers worried owners an X-ray inspection at its factory in Vierzon,
+
+129
+00:08:26,273 --> 00:08:26,873
+France.
+
+130
+00:08:30,693 --> 00:08:33,649
+If you own a hardware wallet bought from a shop or a reseller,
+
+131
+00:08:33,689 --> 00:08:35,138
+here's what the police advise.
+
+132
+00:08:35,738 --> 00:08:37,978
+If you suspect the device, stop using it.
+
+133
+00:08:38,018 --> 00:08:40,203
+Don't type your recovery phrase into it.
+
+134
+00:08:40,243 --> 00:08:42,857
+Contact the maker through its official support.
+
+135
+00:08:43,558 --> 00:08:47,105
+If you think the words have leaked, move what's left to a new wallet,
+
+136
+00:08:47,145 --> 00:08:50,108
+with a new recovery phrase, set up on a device you trust.
+
+137
+00:08:50,808 --> 00:08:52,014
+And never share those words.
+
+138
+00:08:52,054 --> 00:08:54,594
+Not with someone who says they're from the wallet company.
+
+139
+00:08:54,634 --> 00:08:56,636
+Not with someone who says they're the police.
+
+140
+00:09:00,836 --> 00:09:04,668
+As we make this video, we found no public arrest and no charges.
+
+141
+00:09:05,369 --> 00:09:08,533
+We don't know who fitted the boards, or where along the chain.
+
+142
+00:09:08,573 --> 00:09:10,485
+We don't know who bought CryptoBilis.
+
+143
+00:09:11,185 --> 00:09:14,432
+Ledger hasn't confirmed how many devices were tampered with,
+
+144
+00:09:14,472 --> 00:09:16,116
+or how much was lost in total.
+
+145
+00:09:16,816 --> 00:09:18,818
+And we don't know if it's over.
+
+146
+00:09:18,858 --> 00:09:21,756
+Ledger itself says more devices may surface.
+
+147
+00:09:22,556 --> 00:09:25,026
+Here's what we do know. The chip was never broken.
+
+148
+00:09:27,726 --> 00:09:31,638
+Somewhere, there's a box like this one. Plastic tight. Seal intact.
+
+149
+00:09:32,337 --> 00:09:35,635
+A seal proves the box hasn't been opened since someone closed it.
+
+150
+00:09:35,675 --> 00:09:37,780
+It doesn't tell you who that someone was.
+
+151
+00:09:38,580 --> 00:09:42,356
+And the thief's money trail starts with a withdrawal from an exchange.
+
+152
+00:09:42,396 --> 00:09:43,650
+Exchanges keep records.
+
+153
+00:09:44,250 --> 00:09:48,166
+Whether those records lead to a name, no one has said. So far.
+
+154
+00:09:49,167 --> 00:09:51,738
+Before you trust a seal, ask who sealed it.
+
+155
+00:09:52,737 --> 00:09:55,148
+I'm Thomas Archer. This was Siphon Files.
+
