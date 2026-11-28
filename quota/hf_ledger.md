@@ -39,3 +39,5 @@ Refaceri ilustrații t1_sealed_box, a7_empty_wallets, d11_drain (~1 min) + clipu
 **28 nov, 06:36 (ZIUA 3, start real):** longcat-batch cu b15, c7, c10, d9 (4 clipuri 720p; al 4-lea din credite, ≤ $2/zi). Ziua 4 cel mai devreme 29 nov, 07:36.
 
 **28 nov, 07:28 (ziua 3, rezultat):** toate 4 clipurile au ieșit (b15 322 s, c7 318 s, c10 318 s, d9 318 s de așteptare; 720p). Verificat pe cadre: aceeași față, pulover vișiniu, birou identic. Al 4-lea clip a trecut peste 40 min fără „GPU task aborted” → căderea lui b7 din ziua 2 nu vine din depășirea cotei (rămâne probabilă limita de 240 s pe un GPU mai lent). Cost estimat: ~42,7 min cotă → ~$0,27 din credite (de confirmat pe pagina de billing). Rămân 4 clipuri/zi: ziua 4 (≥ 29 nov 07:36) d15, e8, f6, g5 · ziua 5 k5, k6, b7. Thomas: 9/16.
+
+**28 nov, 10:20 (ziua 3, la cererea proprietarului):** 2 imagini pentru thumbnail (`set5_thumb.json`, portofel subțire generic, fără logo), ~35 s GPU peste cotă ≈ $0,06 din credite.
