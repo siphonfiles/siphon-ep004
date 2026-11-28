@@ -1,0 +1,20 @@
+name: thumbnails ep004 (CPU)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  thumbs:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v5
+      - name: Make
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq python3-pil python3-numpy > /dev/null
+          curl -fsSL -o /tmp/Anton-Regular.ttf "https://github.com/google/fonts/raw/main/ofl/anton/Anton-Regular.ttf"
+          ANTON=/tmp/Anton-Regular.ttf python3 thumbnails/make_ep004_options.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git add thumbnails/ep004 && git commit -qm "ep004 thumbnail options" && (git push || (git pull --rebase && git push))
