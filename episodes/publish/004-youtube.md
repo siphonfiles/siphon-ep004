@@ -6,7 +6,7 @@ Video: Release `ep004-render-N` from `render-ep004.yml` (scale 1 = 1080p + 720p 
 | What | File |
 |---|---|
 | Video | Release `ep004-render-N` |
-| Thumbnail (1280x720) | `thumbnails/ep004/` (3 options A/B/C, the owner picks) |
+| Thumbnail (1280x720) | `thumbnails/ep004/ep004_thumbnail_FINAL.jpg` (= option D, "LEDGER / SEALED. / ALREADY ROBBED.", chosen by the owner 28 Nov 2026) |
 | Description (copy-paste, 3359 / 5000 characters) | `episodes/publish/004-description.txt` |
 | English captions | `episodes/publish/004-captions-en.srt` (155 cues, `scripts/make_captions_ep004.py`) |
 
@@ -38,4 +38,4 @@ Note: $102M is Bitquery's count, not confirmed by Ledger; the description says s
 ## Still to do before upload
 - Exact URLs for [S2], [S5], [S6], [S19] (X / LinkedIn posts) (only the ones verified in `research/ep004-facts.md` are linked now; never guess a URL).
 - Chapter times re-checked on the final render.
-- Thumbnails; translated titles/descriptions and captions (14 languages).
+- Translated titles/descriptions and captions (14 languages).
