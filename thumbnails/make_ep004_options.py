@@ -47,6 +47,27 @@ def text_block(im, x, y, lines, anchor="la"):
     return im
 
 
+def violet_screens(im):
+    """Shift the greenish device screens of the Z-Image output to the episode's ultraviolet."""
+    hsv = np.asarray(im.convert("HSV")).astype(np.float32)
+    h = hsv[..., 0] * 360 / 255
+    m = np.clip(1 - np.abs(h - 150) / 45, 0, 1) * np.clip((hsv[..., 1] - 40) / 60, 0, 1)
+    hsv[..., 0] = (h * (1 - m) + 262 * m) * 255 / 360
+    return Image.fromarray(hsv.clip(0, 255).astype(np.uint8), "HSV").convert("RGB")
+
+
+def inset(name, x, y, scale=0.8, gain=1.5, sat=1.1, shade=0.6):
+    """The picture set smaller and to the right on a blurred copy of itself: room for the words on the left."""
+    full = violet_screens(base(name, gain=gain, sat=sat))
+    bg = Image.blend(full.filter(ImageFilter.GaussianBlur(45)), Image.new("RGB", (W, H), (10, 6, 20)), 0.5)
+    w, h = int(W * scale), int(H * scale)
+    small = full.resize((w, h), Image.LANCZOS)
+    m = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(m).rectangle((70, 60, w - 70, h - 60), fill=255)
+    bg.paste(small, (x, y), m.filter(ImageFilter.GaussianBlur(50)))
+    return side_shade(bg, "left", shade, 0.5)
+
+
 def save(im, name):
     os.makedirs(OUT, exist_ok=True)
     im.save(os.path.join(OUT, name), quality=93)
@@ -76,6 +97,14 @@ def main():
     im = side_shade(im, "left", 0.9, 0.62)
     text_block(im, 60, 170, [("IT READ", 190, WHITE, 0), ("THE SCREEN.", 128, UV, 222)])
     save(im, "ep004_thumb_C_it_read_the_screen.jpg")
+    # D, E: a slim generic hardware wallet (no logo, not a copy of a real product) + the word LEDGER as plain text
+    im = inset("th_slim_wallet_box", 330, 90)
+    text_block(im, 50, 40, [("LEDGER", 215, WHITE, 0), ("SEALED.", 125, UV, 250), ("ALREADY", 125, RED, 385),
+                            ("ROBBED.", 125, RED, 520)])
+    save(im, "ep004_thumb_D_ledger_sealed_robbed.jpg")
+    im = inset("th_slim_wallet_open", 310, 80)
+    text_block(im, 50, 90, [("LEDGER", 215, WHITE, 0), ("THE CHIP", 135, UV, 260), ("WAS FINE.", 135, UV, 405)])
+    save(im, "ep004_thumb_E_ledger_chip_was_fine.jpg")
 
 
 if __name__ == "__main__":
